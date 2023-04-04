@@ -1,5 +1,5 @@
-#Author: Joseph McGurkin
-#Description: Edits the attributes of the selected component
+# Author: tallman#9584 on Discord
+# Description: Provides a dialgog to edit the attributes of the selected component
 
 import adsk.core, adsk.fusion, traceback
 

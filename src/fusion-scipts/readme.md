@@ -4,7 +4,10 @@ The scripts in this folder can be added in Fusion 360 as an add-in.
 ## Scripts
 
 ### Update Part Numbers
-Components which are the same, but not linked will have a *(index)* at the end of the name. This script will update the component's part number to the same as the name, however without the *(index)* at the end. This does not *link* components. N.B. If you have intentionally added the parenthesis at the end, they will be removed from the component's part number.
+Components which are the same, but not linked will have a *(index)* at the end of the name.
+This script will update the component's part number to the same as the name, however without the *(index)* at the end.
+This does not *link* components.
+N.B. If you have intentionally added the parenthesis at the end, they will be removed from the component's part number.
 
 ### Attribute Editor
 Components have a collection of attributes in the form of Group Name, Name and Value. This script allows the attributes of the selected component to be edited. A use case is described in the Export BOM below.

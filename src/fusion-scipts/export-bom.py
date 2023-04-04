@@ -1,125 +1,116 @@
-# Author: Joseph McGurkin
+# Author: tallman#9584 on Discord
 # Description:
-#   This script creates a BOM from the active component. 
-#   If no component is active, the root component is used. 
+#   This script creates a BOM from the root component. 
 #   Output is a markdown file with images in an images folder.
 # Notes:
 #   Yes, there are solutions which simply iterate through the root component's all occurrences.
-#   However, this solution covers two important scenarios. If an assembly has child linked assemblies and those children have grandchildren links,
-#   the linked grandchild cannot be isolated for an image. Also, enable parent assemblies to be exported as a single assembly.
+#   This scripts adds some more robust features:
+#   1. Child and grand child linked assemblies - 
+#      Simply going through all occurrences will not include the grandchildren
+#   2. Single Assemblies - 
+#      Using a Raspberry Pi assembly as an example, it may be comprised of many smaller components.
+#      However, in the BOM it should be just a single line.
+#      Use the add-single-assembly-attribute.py script to tag any assembly or component as single.
+#   3. Ignoring Assemblies - 
+#      If there's something in the assembly which shouldn't be in the BOM
+#      Use the attribute-editor.py script to tag any assembly or component as single.
 
-from inspect import getfile
-import adsk.core, adsk.fusion, adsk.cam, traceback, urllib, time
-
-def getFolder(ui, title):
-    folderDialog = ui.createFolderDialog()
-    folderDialog.title = title
-    dialogResult = folderDialog.showDialog()
-    if dialogResult == adsk.core.DialogResults.DialogOK:
-        return folderDialog.folder + "\\"
-    return None
-
-def hideAll(design, ui):
-    bulbDialog = None
-    if design.rootComponent.allOccurrences.count > 100:
-        bulbDialog = ui.createProgressDialog()
-        bulbDialog.cancelButtonText = 'Cancel'
-        bulbDialog.isBackgroundTranslucent = False
-        bulbDialog.isCancelButtonShown = True
-        bulbDialog.show('Step 1 of 2, hiding everything...', '%p percent complete, component %v of %m', 0, design.rootComponent.allOccurrences.count, 1)
-    for occ in design.rootComponent.allOccurrences:
-        for body in occ.component.bRepBodies:
-            body.isLightBulbOn = False
-        if bulbDialog:
-            bulbDialog.progressValue = bulbDialog.progressValue + 1
-            if bulbDialog.wasCancelled: return
-    if bulbDialog:
-        bulbDialog.hide()
-        bulbDialog = None
-
-def toggleBulb(occurrence, newValue):
-    for body in occurrence.component.bRepBodies:
+import adsk.core, adsk.fusion, traceback, urllib
+    
+def toggleChildren(occ, newValue, recursive):
+    occ.isLightBulbOn = newValue
+    occ.component.isLightBulbOn = newValue
+    for body in occ.bRepBodies:
         body.isLightBulbOn = newValue
-    for child in occurrence.childOccurrences:
-        toggleBulb(child, newValue)
+    if recursive == True:
+        for child in occ.childOccurrences:
+            toggleChildren(child, newValue, recursive)
 
-def getIgnore(objWithAttrs):
-    rv = False
-    for attr in objWithAttrs.attributes:
-        if attr.groupName == 'exportBom' and attr.name == 'ignore' and attr.value == 'True':
-            rv = True
-    return rv
-
-def getIsSingleAssembly(objWithAttrs):
-    rv = False
-    for attr in objWithAttrs.attributes:
-        if attr.groupName == 'exportBom' and attr.name == 'isSingleAssembly' and attr.value == 'True':
-            rv = True
-    return rv
-
-def processOccs(occs, imagesFolder, viewPort, progressDialog, bomList):
+def processOccs(occs, dialog, bom, viewPort, imagesFolder):
+    if dialog.wasCancelled:
+        return
     for occ in occs:
-        ignore = getIgnore(occ.component)
-        isSingleAssembly = getIsSingleAssembly(occ.component)
+        processOcc(occ, dialog, bom, viewPort, imagesFolder)
 
-        if not ignore:
-            if isSingleAssembly or occ.component.bRepBodies.count > 0:
-                partNumber = occ.component.partNumber
-                itemFound = False
-                for bomItem in bomList:
-                    if bomItem['partNumber'] == partNumber:
-                        bomItem['instances'] += 1
-                        itemFound = True
-                        break
+def processOcc(occ, dialog, bom, viewPort, imagesFolder):
+    if dialog.wasCancelled:
+        return
+    
+    inBom = False
+    ignorePart = False
+    isSingleAssembly = False
+    partNumber = occ.component.partNumber
 
-                if not itemFound:
-                    if isSingleAssembly:
-                        toggleBulb(occ, True)
-                    else:
-                        for body in occ.component.bRepBodies:
-                            body.isLightBulbOn = True
-                    viewPort.fit()
-                    imageFileName = partNumber + '.png'
-                    imagePath = urllib.parse.quote("images/" + imageFileName)
-                    filePath = "{}{}.png".format(imagesFolder, partNumber)
-                    viewPort.saveAsImageFile(filePath, 100, 100)
-                    bomList.append({
-                        'imagePath': imagePath,
-                        'partName': occ.name,
-                        'partNumber': partNumber,
-                        'instances': 1,
-                        'material': '',
-                        'description': occ.component.description,
-                    })
+    for attr in occ.component.attributes:
+        if attr.groupName == 'exportBom':
+            if attr.name == 'isSingleAssembly' and attr.value == 'True':
+                isSingleAssembly = True
+            if attr.name == 'ignore' and attr.value == 'True':
+                ignorePart = True
 
-                    toggleBulb(occ, False)
+    if not ignorePart:
+        if isSingleAssembly or occ.component.bRepBodies.count > 0:
+            for bomItem in bom:
+                if bomItem['partNumber'] == partNumber:
+                    bomItem['instances'] += 1
+                    inBom = True
+                    break
 
-            if not isSingleAssembly:
-                processOccs(occ.childOccurrences, imagesFolder, viewPort, progressDialog, bomList)
+            if not inBom:
+                toggleChildren(occ, True, isSingleAssembly)
 
-        if progressDialog:
-            progressDialog.progressValue = progressDialog.progressValue + 1
-            if progressDialog.wasCancelled: return
+                viewPort.fit()
+                imageFileName = partNumber + '.png'
+                imagePath = urllib.parse.quote("images/" + imageFileName)
+                filePath = "{}{}.png".format(imagesFolder, partNumber)
+                viewPort.saveAsImageFile(filePath, 100, 100)
+                bom.append({
+                    'imagePath': imagePath,
+                    'partName': occ.name,
+                    'partNumber': partNumber,
+                    'instances': 1,
+                    'material': '',
+                    'description': occ.component.description,
+                })
+
+            toggleChildren(occ, False, True)
+
+    if isSingleAssembly == False:
+        occ.isLightBulbOn = True
+        processOccs(occ.childOccurrences, dialog, bom, viewPort, imagesFolder)
+
+    dialog.progressValue = dialog.progressValue + 1
 
 def run(context):
     ui = None
     try:
         app = adsk.core.Application.get()
         ui  = app.userInterface
-        activeProduct = app.activeProduct
-        design = adsk.fusion.Design.cast(activeProduct)
-        if not design:
-            ui.messageBox('Please switch to the Design workspace.', 'Scratch')
-            return
-
         viewPort = app.activeViewport
-        startComp = design.activeComponent
-        turnedOffGrid = False
+        
+        product = app.activeProduct
+        design = adsk.fusion.Design.cast(product)
+        if not design:
+            ui.messageBox('No active Fusion design', 'No Design')
+            return
+        rc = design.rootComponent
+        allOccs = rc.allOccurrences
+        rcOccs = rc.occurrences
+        userCancelled = False
+        bomList = []
 
-        rootFolder = getFolder(ui, "Selcect a folder for the BOM")
-        imagesFolder = rootFolder + "images" + "\\"
+        bomFolder = "C:\\Temp\\bom\\"
+        folderDialog = ui.createFolderDialog()
+        folderDialog.title = "Selcect a folder for the BOM"
+        dialogResult = folderDialog.showDialog()
+        if dialogResult == adsk.core.DialogResults.DialogOK:
+            bomFolder = folderDialog.folder + "\\"
+        else:
+            return
+        imagesFolder = bomFolder + "images\\"
 
         # If grid is on, temporarily turn off
+        turnedOffGrid = False
         cmdDef = ui.commandDefinitions.itemById('ViewLayoutGridCommand')
         listCntrlDef = adsk.core.ListControlDefinition.cast(cmdDef.controlDefinition)
         layoutGridItem = listCntrlDef.listItems.item(0)
@@ -127,89 +118,61 @@ def run(context):
             layoutGridItem.isSelected = False
             turnedOffGrid = True
 
-        hideAll(design, ui)
+        occDialog = ui.createProgressDialog()
+        occDialog.cancelButtonText = 'Cancel'
+        occDialog.isBackgroundTranslucent = False
+        occDialog.isCancelButtonShown = True
 
-        bomList = []
-        
-        # If the selected item has bodies and occurrences, need to get the bodies before working all occurrences
-        if startComp.bRepBodies.count > 0:
-            for body in startComp.bRepBodies:
-                body.isLightBulbOn = True
-            viewPort.fit()
-            partNumber = startComp.partNumber
-            imageFileName = partNumber + '.png'
-            imagePath = urllib.parse.quote("images/" + imageFileName)
-            filePath = "{}{}.png".format(imagesFolder, partNumber)
-            viewPort.saveAsImageFile(filePath, 200, 200)
-            bomList.append({
-                'imagePath': imagePath,
-                'partName': startComp.name,
-                'partNumber': partNumber,
-                'instances': 1,
-                'material': '',
-                'description': startComp.description,
-            })
-            for body in startComp.bRepBodies:
-                body.isLightBulbOn = False
-
-        occDialog = None
-        if startComp.allOccurrences.count > 10:
-            occDialog = ui.createProgressDialog()
-            occDialog.cancelButtonText = 'Cancel'
-            occDialog.isBackgroundTranslucent = False
-            occDialog.isCancelButtonShown = True
-            occDialog.show('Step 2 of 2, exporting BOM...', '%p percent complete, component %v of %m', 0, startComp.allOccurrences.count, 1)
-
-        start = time.time()
-
-        processOccs(startComp.occurrences.asList, imagesFolder, viewPort, occDialog, bomList)
-
-        end = time.time()
-        processElapsed = end-start
-        
-        # Get image of start assembly
-        for occ in startComp.allOccurrences:
+        occDialog.show('Step 1 of 3: Hiding everything...', '%p percent complete, component %v of %m', 0, allOccs.count, 1)
+        for occ in allOccs:
+            if occ.isLightBulbOn == True:
+                occ.isLightBulbOn = False
             for body in occ.bRepBodies:
-                body.isLightBulbOn = True
-        viewPort.fit()
-        startPartNumber = startComp.partNumber + " Assembly"
-        startImageFileName = startPartNumber + '.png'
-        startImagePath = urllib.parse.quote("images/" + startImageFileName)
-        startFilePath = "{}{}.png".format(imagesFolder, startPartNumber)
-        viewPort.saveAsImageFile(startFilePath, 200, 200)
+                if body.isLightBulbOn == True:
+                    body.isLightBulbOn = False
+            occDialog.progressValue = occDialog.progressValue + 1
+            if occDialog.wasCancelled:
+                userCancelled = True
+                break
+        occDialog.hide()
 
-        bomList.sort(key=lambda x: (x['partNumber'].casefold(), x))
- 
-        initialFilename = startComp.partNumber + " BOM"
-        mdText = "# " + initialFilename + "\n"
-        mdText += "![](" + startImagePath + ")\n"
-        mdText += "|Image|Name|Number|Quantity|Description|\n|-|-|-|-|-|"
-        for bomItem in bomList:
-            mdText = mdText + "\n|![](" + bomItem['imagePath'] + ")|" + bomItem['partName'] +  "|" + bomItem['partNumber'] +  "|" + str(bomItem['instances']) + "|" + bomItem['description'] + "|"
-        with open(rootFolder + "\\" + urllib.parse.quote(initialFilename) + ".md", "w") as outputFile:
-            outputFile.writelines(mdText)
+        if userCancelled == False:
+            occDialog.show('Step 2 of 3: Exporting images...', '%p percent complete, component %v of %m', 0, allOccs.count, 1)
+            processOccs(rcOccs, occDialog, bomList, viewPort, imagesFolder)
 
-        if occDialog:
-            occDialog.hide()
-
-        if turnedOffGrid == True:
-            layoutGridItem.isSelected = True
-
+        # Get root image for BOM
         sels = ui.activeSelections
         sels.clear()
-        sels.add(design.rootComponent)
+        sels.add(rc)
         app.executeTextCommand('Commands.Start ShowAllComponentsCmd')
         app.executeTextCommand('Commands.Start ShowAllBodiesCmd')
         sels.clear()
         viewPort.fit()
+        startImagePath = imagesFolder + rc.partNumber + ".png"
+        viewPort.saveAsImageFile(startImagePath, 200, 200)
+        
+        if len(bomList) > 0:
+            occDialog.show('Step 3 of 3: Generating BOM...', '%p percent complete, component %v of %m', 0, len(bomList), 1)
 
-        end = time.time()
-        totalElapsed = end-start
+            mdText = "# " + rc.partNumber + " BOM\n"
+            mdText += "![](images/" + urllib.parse.quote(rc.partNumber) + ".png)\n"
+            mdText += "|Image|Name|Number|Description|Quantity|\n|-|-|-|-|-|"
+        
+            bomList.sort(key=lambda x: (x['partName'].casefold(), x))
+            for bomItem in bomList:
+                mdText = mdText + "\n|![](" + bomItem['imagePath'] + ")|" + bomItem['partName'] +  "|" + bomItem['partNumber'] +  "|" + bomItem['description'] + "|" + str(bomItem['instances']) + "|"
+                occDialog.progressValue = occDialog.progressValue + 1
+                if occDialog.wasCancelled:
+                    userCancelled = True
+                    break
 
-        message = 'Finished\n'
-        message += 'Process time: ' + time.strftime("%Hh %Mm %Ss", time.gmtime(processElapsed)) + '\n'
-        message += 'Total time: ' + time.strftime("%Hh %Mm %Ss", time.gmtime(totalElapsed))
-        ui.messageBox(message)
+            if userCancelled == False:
+                with open(bomFolder + "\\" + rc.partNumber + " BOM.md", "w") as outputFile:
+                    outputFile.writelines(mdText)
+
+        if turnedOffGrid == True:
+            layoutGridItem.isSelected = True
+        occDialog.hide()
 
     except:
         if ui:
