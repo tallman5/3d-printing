@@ -3,9 +3,9 @@ When installing the gantry into the frame, use Z Locks as helping hands to hold 
 
 There are three lengths, 100mm, 150mm and 200mm. The 150 length seems to be ideal during a 350 build, gives some room to still fit drivers above and below the gantry.
 
-![Z Locks](images/z-locks.png)
+![Z Locks](../../../images/z-locks.png)
 
-![Z Locks](images/z-locks-installed.png)
+![Z Locks](../../../images/z-locks-installed.png)
 
 ## Gantry Install
 Follow the typical steps in the build manual up to the Gantry Install section. Use the Z Locks instead of the long zip ties.
