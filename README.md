@@ -17,6 +17,7 @@ The script is in the [src/fusion-scripts](src/fusion-scipts/) folder.
 
 | |BOM|
 |---|---|
-|<img src="printers/voron/v2.4/images/Voron%202.4R2.png" width="200px" />|[Voron 2.4R2](/printers/voron/v2.4/Voron%202.4R2%20BOM.md)|
-|<img src="printers/rat-rig/v-core/images/Enclosure%202.0%20Assembly%20-%20200x200x200.png" width="200px" />|[Rat Rig V-Core v3.1 200](printers/rat-rig/v-core/Enclosure%202.0%20Assembly%20-%20200x200x200%20BOM.md)|
 |<img src="printers/eva/images/EVA3%20Assembly.png" width="200px" />|[EVA](printers/eva/EVA3%20Assembly%20BOM.md)|
+|<img src="printers/rat-rig/v-core/images/Enclosure%202.0%20Assembly%20-%20200x200x200.png" width="200px" />|[Rat Rig V-Core v3.1 200](printers/rat-rig/v-core/Enclosure%202.0%20Assembly%20-%20200x200x200%20BOM.md)|
+|<img src="printers/stealthburner/images/Stealthburner CW2 Assembly.png" width="200px" />|[Stealthburner](/printers/stealthburner/Stealthburner%20CW2%20Assembly%20BOM.md)|
+|<img src="printers/voron/v2.4/images/Voron%202.4R2.png" width="200px" />|[Voron 2.4 R2](/printers/voron/v2.4/Voron%202.4R2%20BOM.md)|

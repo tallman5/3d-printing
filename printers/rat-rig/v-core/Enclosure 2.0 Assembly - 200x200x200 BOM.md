@@ -55,7 +55,7 @@
 |![](images/enclosure2_spool_holder_4mm.png)|enclosure2_spool_holder_4mm v1:1|enclosure2_spool_holder_4mm||1|
 |![](images/HW2685EC.png)|Endstop Module - Horizontal Limit Switch v1:1|HW2685EC||2|
 |![](images/face_belt_grabber.png)|face_belt_grabber v1:1|face_belt_grabber||2|
-|![](images/HW2815EC.png)|Fan - 40mm Axial Brushless 24V DC v1:1|HW2815EC||1|
+|![](images/HW2815EC.png)|Fan - 40mm Axial Brushless 24V DC v2:1|HW2815EC||1|
 |![](images/HW2954GC.png)|FlexPlate Set - Powder coated PEI 210x210mm v1:1|HW2954GC||1|
 |![](images/Foam%20Seal%20-%20Front%20200.png)|Foam Seal - Front 200 v1:1|Foam Seal - Front 200||1|
 |![](images/Foam%20Seal%20-%20Top%20200.png)|Foam Seal - Top 200 v1:1|Foam Seal - Top 200||1|
