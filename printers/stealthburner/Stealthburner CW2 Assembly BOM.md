@@ -21,7 +21,6 @@
 |![](images/Direct_Drivegear%20%281%29.png)|Direct_Drivegear (1):1|Direct_Drivegear (1)||1|
 |![](images/guidler_b.png)|guidler_b:1|guidler_b||1|
 |![](images/guilder_a.png)|guilder_a:1|guilder_a||1|
-|![](images/Heatsink.png)|Heatsink:1|Heatsink||1|
 |![](images/K3x5x7%20Needlebearing%20%281%29%20%281%29.png)|K3x5x7 Needlebearing (1) (1):1|K3x5x7 Needlebearing (1) (1)||2|
 |![](images/Latch.png)|Latch:1|Latch||1|
 |![](images/led_carrier.png)|led_carrier:1|led_carrier||1|
@@ -43,10 +42,10 @@
 |![](images/MR825%20Ballbearing%205x8x2.png)|MR825 Ballbearing 5x8x2:1|MR825 Ballbearing 5x8x2||2|
 |![](images/NewShuttle.png)|NewShuttle:1|NewShuttle||1|
 |![](images/Nylon%20Washer%20%28Thumbscrew%29.png)|Nylon Washer (Thumbscrew):1|Nylon Washer (Thumbscrew)||1|
+|![](images/P6%20Assembly%20%28RevC%29.png)|P6 Assembly (RevC):1|P6 Assembly (RevC)||1|
 |![](images/Part36.png)|Part36:1|Part36||1|
 |![](images/pcb_spacer.png)|pcb_spacer:1|pcb_spacer||1|
 |![](images/PTFE%20Tube%20Revo%20Voron%2029.8.png)|PTFE Tube Revo Voron 29.8:1|PTFE Tube Revo Voron 29.8||1|
-|![](images/Revo%20Spring.png)|Revo Spring:1|Revo Spring||1|
 |![](images/rgbw_led_pcb.png)|rgbw_led_pcb:1|rgbw_led_pcb||3|
 |![](images/Shaft-assembly%20%281%29.png)|Shaft-assembly (1):1|Shaft-assembly (1)||1|
 |![](images/stealthburner_body.png)|stealthburner_body:1|stealthburner_body||1|
@@ -55,4 +54,3 @@
 |![](images/Toolhead%20Revo%20Voron%20Front.png)|Toolhead Revo Voron Front:1|Toolhead Revo Voron Front||1|
 |![](images/Toolhead%20Revo%20Voron%20Rear.png)|Toolhead Revo Voron Rear:1|Toolhead Revo Voron Rear||1|
 |![](images/turbine%20%281%29.png)|turbine (1):1|turbine (1)||1|
-|![](images/V7_wo_fanV7_Fitment_CAD_wo_fan_1.3.png)|V7_wo_fanV7_Fitment_CAD_wo_fan_1.3:1|V7_wo_fanV7_Fitment_CAD_wo_fan_1.3||1|
