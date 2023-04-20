@@ -55,19 +55,19 @@
 |![](images/enclosure2_spool_holder_4mm.png)|enclosure2_spool_holder_4mm v1:1|enclosure2_spool_holder_4mm||1|
 |![](images/HW2685EC.png)|Endstop Module - Horizontal Limit Switch v1:1|HW2685EC||2|
 |![](images/face_belt_grabber.png)|face_belt_grabber v1:1|face_belt_grabber||2|
-|![](images/HW2815EC.png)|Fan - 40mm Axial Brushless 24V DC v2:1|HW2815EC||1|
+|![](images/HW2815EC.png)|Fan - 40mm Axial Brushless 24V DC v3:1|HW2815EC|https://amzn.to/41pzbJc|1|
 |![](images/HW2954GC.png)|FlexPlate Set - Powder coated PEI 210x210mm v1:1|HW2954GC||1|
-|![](images/Foam%20Seal%20-%20Front%20200.png)|Foam Seal - Front 200 v1:1|Foam Seal - Front 200||1|
-|![](images/Foam%20Seal%20-%20Top%20200.png)|Foam Seal - Top 200 v1:1|Foam Seal - Top 200||1|
+|![](images/Foam%20Seal%20-%20Front%20200.png)|Foam Seal - Front 200 v2:1|Foam Seal - Front 200|https://amzn.to/3URhwre|1|
+|![](images/Foam%20Seal%20-%20Top%20200.png)|Foam Seal - Top 200 v2:1|Foam Seal - Top 200|https://amzn.to/3URhwre|1|
 |![](images/front_universal.png)|front_universal v1:1|front_universal||1|
-|![](images/HW1251NC.png)|Hex Locking Nut - M3 v1:1|HW1251NC||22|
+|![](images/HW1251NC.png)|Hex Locking Nut - M3 v2:1|HW1251NC|Black ones: https://amzn.to/3oyShha|22|
 |![](images/HW1039NC.png)|Hex Locking Nut - M5 v1:1|HW1039NC||13|
-|![](images/HW1311NC.png)|Hex Locking Nut - M6 v1:1|HW1311NC||24|
+|![](images/HW1311NC.png)|Hex Locking Nut - M6 v2:1|HW1311NC|Black ones: https://amzn.to/41mNBcR|24|
 |![](images/HW1508NC.png)|Hex Nut - M3 v1:1|HW1508NC||33|
 |![](images/hotend_rapido.png)|hotend_rapido v1:1|hotend_rapido||1|
 |![](images/HW3056PC.png)|idler_plate_enclosure_2.0_v1.0 v1:1|HW3056PC||4|
 |![](images/HW1915PC.png)|Joining Plate for 3030 - 90 Degree - Black Anodized v1:1|HW1915PC||20|
-|![](images/HW1914PC.png)|Joining Plate for 3030 - T - Black Anodized v1:1|HW1914PC||6|
+|![](images/HW1914PC.png)|Joining Plate for 3030 - T - Black Anodized v2:1|HW1914PC|https://amzn.to/3osEE3k|6|
 |![](images/HW2956EC.png)|Keenovo 180x180 250W Silicone Heater Pad v1:1|HW2956EC||1|
 |![](images/HW2945SC.png)|Lead Screw - TR8*4 Metric Acme Lead Screw - 280mm v1:1|HW2945SC||3|
 |![](images/lead_screw_constraint_front_left_3.1.png)|lead_screw_constraint_front_left_3.1 v1:1|lead_screw_constraint_front_left_3.1||1|
@@ -78,12 +78,12 @@
 |![](images/lead_screw_motor_cage_front_3.1.png)|lead_screw_motor_cage_front_3.1 v1:1|lead_screw_motor_cage_front_3.1||2|
 |![](images/lead_screw_motor_cage_front_trim_3.1.png)|lead_screw_motor_cage_front_trim_3.1 v1:1|lead_screw_motor_cage_front_trim_3.1||2|
 |![](images/HW2915GC.png)|Leadscrew Nut - POM - TR8*4 v1:1|HW2915GC||3|
-|![](images/HW2840EC.png)|LGX Lite Extruder by Bondtech v2:1|HW2840EC||1|
+|![](images/HW2840EC.png)|LGX Lite Extruder by Bondtech v3:1|HW2840EC|https://amzn.to/3KPKHXb|1|
 |![](images/HW2352GC.png)|Linear Rail - MGN12 250mm + MGN12C carriage v1:1|HW2352GC||2|
 |![](images/HW2911GC.png)|Linear Rail - MGN12 300mm + MGN12C carriage v1:1|HW2911GC||4|
 |![](images/lj8_probe_mount.png)|lj8_probe_mount v1:1|lj8_probe_mount||1|
 |![](images/HW2127GC.png)|Magnet - 20x10x5mm - Two hole (M3 Countersink screws) v1:1|HW2127GC||3|
-|![](images/HW2828GC.png)|Magnet - Neodymium disc shape - 10mm x 4mm v1:1|HW2828GC||32|
+|![](images/HW2828GC.png)|Magnet - Neodymium disc shape - 10mm x 4mm v2:1|HW2828GC|https://amzn.to/41ntDPq|32|
 |![](images/HW1630NC.png)|Mini Precision Shim - 8x5x1mm v1:1|HW1630NC||28|
 |![](images/HW2202PC.png)|motor_plate_v1.0 v1:1|HW2202PC||2|
 |![](images/HW1078EC.png)|Nema 17 Stepper Motor - 48mm - 1.8degree/step, 76oz-in v1:1|HW1078EC||5|
@@ -97,14 +97,14 @@
 |![](images/panel_enc2_top_200.png)|panel_enc2_top_200 v1:1|panel_enc2_top_200||1|
 |![](images/panel_magnet_holder.png)|panel_magnet_holder v1:1|panel_magnet_holder||8|
 |![](images/panel_magnet_mount.png)|panel_magnet_mount v1:1|panel_magnet_mount||8|
-|![](images/Phaetus%20Rapido%20HF.png)|Phaetus Rapido HF v1:1|Phaetus Rapido HF||1|
+|![](images/Phaetus%20Rapido%20HF.png)|Phaetus Rapido HF v2:1|Phaetus Rapido HF|https://amzn.to/40qOLD5|1|
 |![](images/pillow_block.png)|pillow_block v1:1|pillow_block||3|
 |![](images/HW2907GC.png)|PTFE Tube - 43.7mm v1:1|HW2907GC||3|
 |![](images/HW2950WC.png)|Rat Rig Bi-Material Lead Screw Decoupler v1:1|HW2950WC||3|
-|![](images/HW2901EC.png)|Rat Rig SuperPinda Probe by P&F v1:1|HW2901EC||1|
+|![](images/HW2901EC.png)|Rat Rig SuperPinda Probe by P&F v3:1|HW2901EC|W/ thermistor for chamber temp: https://amzn.to/3KVdmdu|1|
 |![](images/ratrig_eva3_shroud.png)|ratrig_eva3_shroud v1:1|ratrig_eva3_shroud||1|
 |![](images/HW2125GC.png)|Rubber foot with metal insert - Heavy Duty - 28_22_16.5mm v1:1|HW2125GC||4|
-|![](images/HW2962EC.png)|SANYO DENKI 4028 Axial Fan - 9GAX0412P3S001 v1:1|HW2962EC||1|
+|![](images/HW2962EC.png)|SANYO DENKI 4028 Axial Fan - 9GAX0412P3S001 v2:1|HW2962EC|https://amzn.to/3GUQ2eM|1|
 |![](images/shelf_left_200_3.1.png)|shelf_left_200_3.1 v1:1|shelf_left_200_3.1||1|
 |![](images/shelf_right_200_3.1.png)|shelf_right_200_3.1 v1:1|shelf_right_200_3.1||1|
 |![](images/HW2128GC.png)|Steel Ball - 12mm - Threaded M5 v1:1|HW2128GC||3|
@@ -124,7 +124,7 @@
 |![](images/2020-322.png)|V-Slot 2020 - Black - 322mm v2:1|2020-322||1|
 |![](images/HW1555GC.png)|V-Slot Door Handle v1:1|HW1555GC||4|
 |![](images/HW2949PC.png)|VC3-XY_Joiner_Plate_v1.1 v1:1|HW2949PC||2|
-|![](images/HW1314NC.png)|Washer Simple M6 v1:1|HW1314NC||113|
+|![](images/HW1314NC.png)|Washer Simple M6 v2:1|HW1314NC|Black ones: https://amzn.to/3ood0o1|113|
 |![](images/x_endstop_block_3.1.png)|x_endstop_block_3.1 v1:1|x_endstop_block_3.1||1|
 |![](images/xy_joiner_left_3.1.png)|xy_joiner_left_3.1 v1:1|xy_joiner_left_3.1||1|
 |![](images/xy_joiner_right_3.1.png)|xy_joiner_right_3.1 v1:1|xy_joiner_right_3.1||1|
