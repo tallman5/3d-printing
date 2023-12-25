@@ -1,0 +1,1720 @@
+{
+    "result": {
+        "eventtime": 184480.663422948,
+        "status": {
+            "configfile": {
+                "settings": {
+                    "mcu": {
+                        "serial": "/dev/btt-octopus-11",
+                        "baud": 250000,
+                        "max_stepper_error": 0.000025
+                    },
+                    "mcu mmu": {
+                        "serial": "/dev/serial/by-id/usb-Klipper_samd21g18a_2582DD834B54555020312E30021510FF-if00",
+                        "baud": 250000,
+                        "max_stepper_error": 0.000025
+                    },
+                    "board_pins octopus_11_tmc2209": {
+                        "mcu": [
+                            "mcu"
+                        ],
+                        "aliases": [
+                            [
+                                "x_step_pin",
+                                "PF13"
+                            ],
+                            [
+                                "x_dir_pin",
+                                "PF12"
+                            ],
+                            [
+                                "x_enable_pin",
+                                "PF14"
+                            ],
+                            [
+                                "x_uart_pin",
+                                "PC4"
+                            ],
+                            [
+                                "x_diag_pin",
+                                "PG6"
+                            ],
+                            [
+                                "x_endstop_pin",
+                                "PG6"
+                            ],
+                            [
+                                "y_step_pin",
+                                "PG0"
+                            ],
+                            [
+                                "y_dir_pin",
+                                "PG1"
+                            ],
+                            [
+                                "y_enable_pin",
+                                "PF15"
+                            ],
+                            [
+                                "y_uart_pin",
+                                "PD11"
+                            ],
+                            [
+                                "y_diag_pin",
+                                "PG9"
+                            ],
+                            [
+                                "y_endstop_pin",
+                                "PG9"
+                            ],
+                            [
+                                "z0_step_pin",
+                                "PF11"
+                            ],
+                            [
+                                "z0_dir_pin",
+                                "PG3"
+                            ],
+                            [
+                                "z0_enable_pin",
+                                "PG5"
+                            ],
+                            [
+                                "z0_uart_pin",
+                                "PC6"
+                            ],
+                            [
+                                "z0_diag_pin",
+                                "null"
+                            ],
+                            [
+                                "z_endstop_pin",
+                                "PG10"
+                            ],
+                            [
+                                "z1_step_pin",
+                                "PG4"
+                            ],
+                            [
+                                "z1_dir_pin",
+                                "PC1"
+                            ],
+                            [
+                                "z1_enable_pin",
+                                "PA0"
+                            ],
+                            [
+                                "z1_uart_pin",
+                                "PC7"
+                            ],
+                            [
+                                "z1_diag_pin",
+                                "null"
+                            ],
+                            [
+                                "z2_step_pin",
+                                "PF9"
+                            ],
+                            [
+                                "z2_dir_pin",
+                                "PF10"
+                            ],
+                            [
+                                "z2_enable_pin",
+                                "PG2"
+                            ],
+                            [
+                                "z2_uart_pin",
+                                "PF2"
+                            ],
+                            [
+                                "z2_diag_pin",
+                                "null"
+                            ],
+                            [
+                                "z3_step_pin",
+                                "PC13"
+                            ],
+                            [
+                                "z3_dir_pin",
+                                "PF0"
+                            ],
+                            [
+                                "z3_enable_pin",
+                                "PF1"
+                            ],
+                            [
+                                "z3_uart_pin",
+                                "PE4"
+                            ],
+                            [
+                                "z3_diag_pin",
+                                "null"
+                            ],
+                            [
+                                "e_step_pin",
+                                "PE2"
+                            ],
+                            [
+                                "e_dir_pin",
+                                "PE3"
+                            ],
+                            [
+                                "e_enable_pin",
+                                "PD4"
+                            ],
+                            [
+                                "e_uart_pin",
+                                "PE1"
+                            ],
+                            [
+                                "e_diag_pin",
+                                "null"
+                            ],
+                            [
+                                "e_heater_pin",
+                                "PA2"
+                            ],
+                            [
+                                "e_sensor_pin",
+                                "PF4"
+                            ],
+                            [
+                                "stepper_spi_mosi_pin",
+                                "PA7"
+                            ],
+                            [
+                                "stepper_spi_miso_pin",
+                                "PA6"
+                            ],
+                            [
+                                "stepper_spi_sclk_pin",
+                                "PA5"
+                            ],
+                            [
+                                "adxl345_cs_pin",
+                                "PA15"
+                            ],
+                            [
+                                "bltouch_sensor_pin",
+                                "PB7"
+                            ],
+                            [
+                                "bltouch_control_pin",
+                                "PB6"
+                            ],
+                            [
+                                "probe_pin",
+                                "PB7"
+                            ],
+                            [
+                                "fan_part_cooling_pin",
+                                "PA8"
+                            ],
+                            [
+                                "fan_toolhead_cooling_pin",
+                                "PE5"
+                            ],
+                            [
+                                "fan_controller_board_pin",
+                                "PD12"
+                            ],
+                            [
+                                "fan_chamber_exhaust",
+                                "PD13"
+                            ],
+                            [
+                                "heater_bed_heating_pin",
+                                "PA3"
+                            ],
+                            [
+                                "heater_bed_sensor_pin",
+                                "PF3"
+                            ],
+                            [
+                                "EXP1_1",
+                                "PE8"
+                            ],
+                            [
+                                "EXP1_3",
+                                "PE9"
+                            ],
+                            [
+                                "EXP1_5",
+                                "PE12"
+                            ],
+                            [
+                                "EXP1_7",
+                                "PE14"
+                            ],
+                            [
+                                "EXP1_9",
+                                "<GND>"
+                            ],
+                            [
+                                "EXP1_2",
+                                "PE7"
+                            ],
+                            [
+                                "EXP1_4",
+                                "PE10"
+                            ],
+                            [
+                                "EXP1_6",
+                                "PE13"
+                            ],
+                            [
+                                "EXP1_8",
+                                "PE15"
+                            ],
+                            [
+                                "EXP1_10",
+                                "<5V>"
+                            ],
+                            [
+                                "EXP2_1",
+                                "PA6"
+                            ],
+                            [
+                                "EXP2_3",
+                                "PB1"
+                            ],
+                            [
+                                "EXP2_5",
+                                "PB2"
+                            ],
+                            [
+                                "EXP2_7",
+                                "PC15"
+                            ],
+                            [
+                                "EXP2_9",
+                                "<GND>"
+                            ],
+                            [
+                                "EXP2_2",
+                                "PA5"
+                            ],
+                            [
+                                "EXP2_4",
+                                "PA4"
+                            ],
+                            [
+                                "EXP2_6",
+                                "PA7"
+                            ],
+                            [
+                                "EXP2_8",
+                                "<RST>"
+                            ],
+                            [
+                                "EXP2_10",
+                                "PC5"
+                            ]
+                        ]
+                    },
+                    "temperature_sensor octopus": {
+                        "sensor_type": "temperature_mcu",
+                        "sensor_mcu": "mcu",
+                        "min_temp": 0,
+                        "max_temp": 100
+                    },
+                    "adxl345": {
+                        "axes_map": [
+                            "-z",
+                            "-y",
+                            "-x"
+                        ],
+                        "rate": 3200,
+                        "cs_pin": "adxl345_cs_pin",
+                        "spi_speed": 5000000,
+                        "spi_bus": "spi3"
+                    },
+                    "idle_timeout": {
+                        "timeout": 7200,
+                        "gcode": "\n{% if printer.webhooks.state|lower == 'ready' %}\n{% if printer.pause_resume.is_paused|lower == 'false' %}\nM117 Idle timeout reached\nTURN_OFF_HEATERS\nM84\n{% endif %}\n{% endif %}"
+                    },
+                    "temperature_sensor raspberry_pi": {
+                        "sensor_type": "temperature_host",
+                        "sensor_path": "/sys/class/thermal/thermal_zone0/temp",
+                        "min_temp": -273.15,
+                        "max_temp": 99999999.9
+                    },
+                    "input_shaper": {
+                        "shaper_type": "mzv",
+                        "shaper_type_x": "mzv",
+                        "damping_ratio_x": 0.1,
+                        "shaper_freq_x": 51.6,
+                        "shaper_type_y": "mzv",
+                        "damping_ratio_y": 0.1,
+                        "shaper_freq_y": 34.6
+                    },
+                    "virtual_sdcard": {
+                        "path": "~/printer_data/gcodes",
+                        "on_error_gcode": ""
+                    },
+                    "pause_resume": {
+                        "recover_velocity": 50
+                    },
+                    "force_move": {
+                        "enable_force_move": true
+                    },
+                    "respond": {
+                        "default_type": "echo",
+                        "default_prefix": "echo:"
+                    },
+                    "heater_bed": {
+                        "sensor_type": "Generic 3950",
+                        "pullup_resistor": 4700,
+                        "inline_resistor": 0,
+                        "sensor_pin": "heater_bed_sensor_pin",
+                        "min_temp": 0,
+                        "max_temp": 120,
+                        "min_extrude_temp": 170,
+                        "max_power": 1,
+                        "smooth_time": 1,
+                        "control": "pid",
+                        "pid_kp": 61.721,
+                        "pid_ki": 2.494,
+                        "pid_kd": 381.897,
+                        "heater_pin": "heater_bed_heating_pin",
+                        "pwm_cycle_time": 0.02
+                    },
+                    "verify_heater heater_bed": {
+                        "hysteresis": 5,
+                        "max_error": 120,
+                        "heating_gain": 2,
+                        "check_gain_time": 60
+                    },
+                    "fan": {
+                        "max_power": 1,
+                        "kick_start_time": 0.1,
+                        "off_below": 0,
+                        "cycle_time": 0.01,
+                        "hardware_pwm": false,
+                        "shutdown_speed": 1,
+                        "pin": "fan_part_cooling_pin"
+                    },
+                    "heater_fan toolhead_cooling_fan": {
+                        "heater": [
+                            "extruder"
+                        ],
+                        "heater_temp": 50,
+                        "max_power": 1,
+                        "kick_start_time": 0.1,
+                        "off_below": 0,
+                        "cycle_time": 0.01,
+                        "hardware_pwm": false,
+                        "shutdown_speed": 1,
+                        "pin": "fan_toolhead_cooling_pin",
+                        "fan_speed": 1
+                    },
+                    "controller_fan controller_fan": {
+                        "max_power": 1,
+                        "kick_start_time": 0.1,
+                        "off_below": 0,
+                        "cycle_time": 0.01,
+                        "hardware_pwm": false,
+                        "shutdown_speed": 0,
+                        "pin": "fan_controller_board_pin",
+                        "fan_speed": 1,
+                        "idle_speed": 1,
+                        "idle_timeout": 30,
+                        "heater": [
+                            "extruder"
+                        ]
+                    },
+                    "heater_fan exhaust_fan": {
+                        "heater": [
+                            "heater_bed"
+                        ],
+                        "heater_temp": 40,
+                        "max_power": 1,
+                        "kick_start_time": 5,
+                        "off_below": 0,
+                        "cycle_time": 0.01,
+                        "hardware_pwm": false,
+                        "shutdown_speed": 0,
+                        "pin": "fan_chamber_exhaust",
+                        "fan_speed": 1
+                    },
+                    "ratos_homing": {
+                        "z_hop": 25,
+                        "z_hop_speed": 15,
+                        "axes": "xyz",
+                        "gcode": "\n{% set x_homed = 'x' in printer.toolhead.homed_axes %}\n{% set y_homed = 'y' in printer.toolhead.homed_axes %}\n{% set safe_home_x = printer[\"gcode_macro RatOS\"].safe_home_x %}\n{% set safe_home_y = printer[\"gcode_macro RatOS\"].safe_home_y %}\n{% if safe_home_x is not defined or safe_home_x|lower == 'middle' %}\n{% set safe_home_x = printer.toolhead.axis_maximum.x / 2 %}\n{% endif %}\n{% if safe_home_y is not defined or safe_home_y|lower == 'middle' %}\n{% set safe_home_y = printer.toolhead.axis_maximum.y / 2 %}\n{% endif %}\n{% set z_probe = printer[\"gcode_macro RatOS\"].z_probe|lower %}\n{% set speed = printer[\"gcode_macro RatOS\"].macro_travel_speed|float * 60 %}\n{% set z_speed = printer[\"gcode_macro RatOS\"].macro_z_speed|float * 60 %}\n{% set z_hop = printer.configfile.config.ratos_homing.z_hop|float %}\n{% set z_hop_speed = printer.configfile.config.ratos_homing.z_hop_speed|float * 60 %}\n{% set homing_x = printer[\"gcode_macro RatOS\"].homing_x|lower %}\n{% set homing_y = printer[\"gcode_macro RatOS\"].homing_y|lower %}\n{% set homing = printer[\"gcode_macro RatOS\"].homing|lower %}\n{% set prev_stop_on_error = printer[\"gcode_macro RatOS\"].stowable_probe_stop_on_error %}\n\n\nSET_GCODE_VARIABLE MACRO=RatOS VARIABLE=stowable_probe_stop_on_error VALUE=True\n\nM400\nG90\n\n{% if params.X is defined or params.Y is not defined and params.Z is not defined %}\n{% if homing_x == 'endstop' or homing == 'endstops' %}\nG28 X\n{% elif homing_x == 'sensorless' or homing == 'sensorless' %}\nHOME_X_SENSORLESS\n{% else %}\n{ action_emergency_stop(\"expected RatOS variable_homing_x to be 'sensorless' 'endstop' or variable_homing to be 'sensorless' or 'endstops' but found {} and {}\".format(homing_x, homing)) }\n{% endif %}\n{% set x_homed = True %}\nG0 X{safe_home_x} F{speed}\n{% endif %}\n\n{% if params.Y is defined or params.X is not defined and params.Z is not defined %}\n{% if homing_y == 'endstop' or homing == 'endstops' %}\nG28 Y\n{% elif homing_y == 'sensorless' or homing == 'sensorless' %}\nHOME_Y_SENSORLESS\n{% else %}\n{ action_emergency_stop(\"expected RatOS variable_homing_y to be 'sensorless' 'endstop' or variable_homing to be 'sensorless' or 'endstops' but found {} and {}\".format(homing_y, homing)) }\n{% endif %}\n{% set y_homed = True %}\nG0 Y{safe_home_y} F{speed}\n{% endif %}\n\n{% if params.Z is defined or params.Y is not defined and params.X is not defined %}\nRESPOND MSG=\"Homing Z\"\n{% if x_homed == False or y_homed == False %}\nM118 X and Y must be homed before homing Z\n{ action_emergency_stop(\"X and Y must be homed before homing Z\") }\n{% else %}\n{% if z_probe == \"stowable\" %}\nDEPLOY_PROBE\nG0 X{safe_home_x} Y{safe_home_y} F{speed}\nG28 Z\nG0 Z{z_hop} F{z_hop_speed}\nSTOW_PROBE\n{% else %}\nG0 X{safe_home_x} Y{safe_home_y} F{speed}\nG28 Z\nG0 Z{z_hop} F{z_hop_speed}\n{% endif %}\n{% endif %}\n{% endif %}\n\n\nSET_GCODE_VARIABLE MACRO=RatOS VARIABLE=stowable_probe_stop_on_error VALUE={prev_stop_on_error}"
+                    },
+                    "gcode_macro home_x_sensorless": {
+                        "gcode": "\n{% set speed = printer[\"gcode_macro RatOS\"].macro_travel_speed|float * 60 %}\n{% set x_driver = printer[\"gcode_macro RatOS\"].driver_type_x|lower ~ \" stepper_x\" %}\n{% set y_driver = printer[\"gcode_macro RatOS\"].driver_type_y|lower ~ \" stepper_y\" %}\n{% set safe_home_x = printer[\"gcode_macro RatOS\"].safe_home_x %}\n{% if safe_home_x is not defined or safe_home_x|lower == 'middle' %}\n{% set safe_home_x = printer.toolhead.axis_maximum.x / 2 %}\n{% endif %}\nM204 S1000\nSET_TMC_CURRENT STEPPER=stepper_x CURRENT={printer[\"gcode_macro RatOS\"].sensorless_x_current}\nSET_TMC_CURRENT STEPPER=stepper_y CURRENT={printer[\"gcode_macro RatOS\"].sensorless_x_current}\nG4 P300\nG28 X\nSET_TMC_CURRENT STEPPER=stepper_x CURRENT={printer.configfile.config[x_driver].run_current}\nSET_TMC_CURRENT STEPPER=stepper_y CURRENT={printer.configfile.config[y_driver].run_current}\nG4 P300\n\nM204 S{printer.configfile.config.printer.max_accel}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro home_y_sensorless": {
+                        "gcode": "\n{% set safe_home_y = printer[\"gcode_macro RatOS\"].safe_home_y %}\n{% set x_driver = printer[\"gcode_macro RatOS\"].driver_type_x|lower ~ \" stepper_x\" %}\n{% set y_driver = printer[\"gcode_macro RatOS\"].driver_type_y|lower ~ \" stepper_y\" %}\n{% if safe_home_y is not defined or safe_home_y|lower == 'middle' %}\n{% set safe_home_y = printer.toolhead.axis_maximum.y / 2 %}\n{% endif %}\n{% set speed = printer[\"gcode_macro RatOS\"].macro_travel_speed|float * 60 %}\nM204 S1000\nSET_TMC_CURRENT STEPPER=stepper_x CURRENT={printer[\"gcode_macro RatOS\"].sensorless_y_current}\nSET_TMC_CURRENT STEPPER=stepper_y CURRENT={printer[\"gcode_macro RatOS\"].sensorless_y_current}\nG4 P300\nG28 Y\nSET_TMC_CURRENT STEPPER=stepper_x CURRENT={printer.configfile.config[x_driver].run_current}\nSET_TMC_CURRENT STEPPER=stepper_y CURRENT={printer.configfile.config[y_driver].run_current}\nG4 P300\n\nM204 S{printer.configfile.config.printer.max_accel}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro maybe_home": {
+                        "gcode": "\n{% if printer[\"gcode_macro MAYBE_HOME\"].is_kinematic_position_overriden|lower == 'true' %}\nRESPOND MSG=\"SET_CENTER_KINEMATIC_POSITION has been abused. Homing all axes. Please refrain from using SET_CENTER_KINEMATIC_POSITION outside of debugging purposes.\"\nG28\nSET_GCODE_VARIABLE MACRO=MAYBE_HOME VARIABLE=is_kinematic_position_overriden VALUE=False\n{% else %}\n{% set axes = '' %}\n{% set isHomed = true %}\n{% set axesToHome = '' %}\n{% if params.X is defined %}\n{% set axes = axes ~ 'X ' %}\n{% if 'x' not in printer.toolhead.homed_axes %}\n{% set isHomed = false %}\n{% set axesToHome = axesToHome ~ 'X ' %}\n{% endif %}\n{% endif %}\n{% if params.Y is defined %}\n{% set axes = axes ~ 'Y ' %}\n{% if 'y' not in printer.toolhead.homed_axes %}\n{% set isHomed = false %}\n{% set axesToHome = axesToHome ~ 'Y ' %}\n{% endif %}\n{% endif %}\n{% if params.Z is defined %}\n{% set axes = axes ~ 'Z ' %}\n{% if 'z' not in printer.toolhead.homed_axes %}\n{% set isHomed = false %}\n{% set axesToHome = axesToHome ~ 'Z ' %}\n{% endif %}\n{% endif %}\n{% if params.X is not defined and params.Y is not defined and params.Z is not defined %}\n{% set axes = '' %}\n{% if 'x' not in printer.toolhead.homed_axes %}\n{% set isHomed = false %}\n{% set axesToHome = axesToHome ~ 'X ' %}\n{% endif %}\n{% if 'y' not in printer.toolhead.homed_axes %}\n{% set isHomed = false %}\n{% set axesToHome = axesToHome ~ 'Y ' %}\n{% endif %}\n{% if 'z' not in printer.toolhead.homed_axes %}\n{% set isHomed = false %}\n{% set axesToHome = axesToHome ~ 'Z ' %}\n{% endif %}\n{% endif %}\n{% if isHomed is false %}\nM117 Homing {axesToHome}\nRESPOND MSG=\"Homing {axesToHome}\"\nG28 {axesToHome}\n{% else %}\nRESPOND MSG=\"All requested axes already homed, skipping..\"\n{% endif %}\n{% endif %}",
+                        "description": "Only home unhomed axis",
+                        "variable_is_kinematic_position_overriden": "False"
+                    },
+                    "gcode_macro echo_ratos_vars": {
+                        "gcode": "\n{% for var, value in printer[\"gcode_macro RatOS\"].items() %}\n{action_respond_info(var ~ \": \" ~ value)}\n{% endfor %}",
+                        "description": "Echo RatOS variables to the console."
+                    },
+                    "gcode_macro ratos": {
+                        "gcode": "\nECHO_RATOS_VARS",
+                        "description": "RatOS variable storage macro, will echo variables to the console when run.",
+                        "variable_relative_extrusion": "False",
+                        "variable_force_absolute_position": "False",
+                        "variable_preheat_extruder": "False",
+                        "variable_preheat_extruder_temp": "150",
+                        "variable_calibrate_bed_mesh": "True",
+                        "variable_nozzle_priming": "\"primeblob\"",
+                        "variable_nozzle_prime_start_x": "\"max\"",
+                        "variable_nozzle_prime_start_y": "\"min\"",
+                        "variable_nozzle_prime_direction": "\"auto\"",
+                        "variable_filament_unload_length": "130",
+                        "variable_filament_unload_speed": "5",
+                        "variable_filament_load_length": "100",
+                        "variable_filament_load_speed": "10",
+                        "variable_start_print_park_in": "\"back\"",
+                        "variable_start_print_park_z_height": "50",
+                        "variable_start_print_heat_chamber_bed_temp": "115",
+                        "variable_end_print_park_in": "\"back\"",
+                        "variable_pause_print_park_in": "\"back\"",
+                        "variable_macro_travel_speed": "300",
+                        "variable_macro_z_speed": "15",
+                        "variable_end_print_park_z_hop": "20",
+                        "variable_homing": "\"endstops\"",
+                        "variable_sensorless_x_current": "0.6",
+                        "variable_sensorless_y_current": "0.9",
+                        "variable_z_probe": "\"stowable\"",
+                        "variable_safe_home_x": "175",
+                        "variable_safe_home_y": "175",
+                        "variable_stowable_probe_stop_on_error": "False",
+                        "variable_driver_type_x": "\"tmc2209\"",
+                        "variable_driver_type_y": "\"tmc2209\"",
+                        "variable_adaptive_mesh": "False",
+                        "variable_probe_for_priming_result": "None",
+                        "variable_adaptive_prime_offset_threshold": "-1.0",
+                        "variable_stowable_probe_position_preflight": "[237, 330]",
+                        "variable_stowable_probe_position_side": "[237, 350]",
+                        "variable_stowable_probe_position_dock": "[267, 350]",
+                        "variable_stowable_probe_position_exit": "[267, 330]",
+                        "variable_stowable_probe_batch_mode_enabled": "False",
+                        "variable_stowable_probe_state": "None",
+                        "variable_homing_x": "\"endstops\"",
+                        "variable_homing_y": "\"endstops\""
+                    },
+                    "gcode_macro pause": {
+                        "gcode": "\nSAVE_GCODE_STATE NAME=PAUSE_state\n\n{% set E = printer[\"gcode_macro PAUSE\"].extrude|float %}\n{% set speed = printer[\"gcode_macro RatOS\"].macro_travel_speed|float * 60 %}\n{% set z_speed = printer[\"gcode_macro RatOS\"].macro_z_speed|float * 60 %}\n\n{% set max_z = printer.toolhead.axis_maximum.z|float %}\n{% set act_z = printer.toolhead.position.z|float %}\n{% if act_z < (max_z - 20.0) %}\n{% set z_safe = 20.0 %}\n{% else %}\n{% set z_safe = max_z - act_z %}\n{% endif %}\nPAUSE_BASE\nG91\n\n{% if printer.extruder.can_extrude|lower == 'true' %}\nG1 E-{E} F2100\n{% else %}\n{action_respond_info(\"Extruder not hot enough\")}\n{% endif %}\n\n{% if \"xyz\" in printer.toolhead.homed_axes %}\nG1 Z{z_safe} F{z_speed}\n_PARK LOCATION={printer[\"gcode_macro RatOS\"].pause_print_park_in} X={printer[\"gcode_macro RatOS\"].pause_print_park_x}\n{% else %}\n{action_respond_info(\"Printer not homed\")}\n{% endif %}",
+                        "rename_existing": "PAUSE_BASE",
+                        "description": "Pauses the printer",
+                        "variable_extrude": "1.5"
+                    },
+                    "gcode_macro resume": {
+                        "gcode": "\n{% set E = printer[\"gcode_macro PAUSE\"].extrude|float %}\n\n{% if printer.extruder.can_extrude|lower == 'true' %}\nG91\nG1 E{E} F2100\nG90\n{% else %}\n{action_respond_info(\"Extruder not hot enough\")}\n{% endif %}\nRESTORE_GCODE_STATE NAME=PAUSE_state MOVE=1 MOVE_SPEED={printer[\"gcode_macro RatOS\"].macro_travel_speed|float}\nRESUME_BASE",
+                        "rename_existing": "RESUME_BASE",
+                        "description": "Resumes the print if the printer is paused."
+                    },
+                    "gcode_macro cancel_print": {
+                        "gcode": "\nEND_PRINT\nTURN_OFF_HEATERS\nCLEAR_PAUSE\n\nCANCEL_PRINT_BASE",
+                        "rename_existing": "CANCEL_PRINT_BASE",
+                        "description": "Cancels the printer"
+                    },
+                    "gcode_macro prime_line": {
+                        "gcode": "\nSAVE_GCODE_STATE NAME=prime_line_state\n{% set speed = printer[\"gcode_macro RatOS\"].macro_travel_speed|float * 60 %}\n{% set z_speed = printer[\"gcode_macro RatOS\"].macro_z_speed|float * 60 %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_prime_start_x|lower == 'min' %}\n{% set x_start = 5 %}\n{% elif printer[\"gcode_macro RatOS\"].nozzle_prime_start_x|lower == 'max' %}\n{% set x_start = printer.toolhead.axis_maximum.x - 5 %}\n{% else %}\n{% set x_start = printer[\"gcode_macro RatOS\"].nozzle_prime_start_x|float %}\n{% endif %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|lower == 'min' %}\n{% set y_start = 5 %}\n{% set y_factor = 1 %}\n{% elif printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|lower == 'max' %}\n{% set y_start = printer.toolhead.axis_maximum.y - 5 %}\n{% set y_factor = -1 %}\n{% else %}\n{% set y_start = printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|float %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|float < printer.toolhead.axis_maximum.y / 2 %}\n{% set y_factor = 1 %}\n{% else %}\n{% set y_factor = -1 %}\n{% endif %}\n{% endif %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_prime_direction|lower == 'forwards' %}\n{% set y_factor = 1 %}\n{% elif printer[\"gcode_macro RatOS\"].nozzle_prime_direction|lower == 'backwards' %}\n{% set y_factor = -1 %}\n{% endif %}\n{% set z = printer[\"gcode_macro RatOS\"].start_print_park_z_height|float %}\n\nG90\n\nM82\nM117 Priming nozzle with prime line..\nRESPOND MSG=\"Priming nozzle with prime line..\"\n\nG0 Z{z} F{z_speed}\n\nG1 X{x_start} F{speed}\nG1 Y{y_start} F{speed}\n\nG1 Z0.3 F{z_speed}\n\nG92 E0\n\nG1 Y{y_start + (70 * y_factor)} E16 F1200\n\nG1 Y{y_start + (90 * y_factor)} F{speed}\nRESTORE_GCODE_STATE NAME=prime_line_state",
+                        "description": "Prints a primeline, used internally, if configured, as part of the START_PRINT macro."
+                    },
+                    "gcode_macro prime_blob": {
+                        "gcode": "\nSAVE_GCODE_STATE NAME=prime_blob_state\nM117 Priming nozzle with prime blob..\nRESPOND MSG=\"Priming nozzle with prime blob..\"\n{% set speed = printer[\"gcode_macro RatOS\"].macro_travel_speed|float * 60 %}\n{% set z_speed = printer[\"gcode_macro RatOS\"].macro_z_speed|float * 60 %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_prime_start_x|lower == 'min' %}\n{% set x_start = 5 %}\n{% elif printer[\"gcode_macro RatOS\"].nozzle_prime_start_x|lower == 'max' %}\n{% set x_start = printer.toolhead.axis_maximum.x - 5 %}\n{% else %}\n{% set x_start = printer[\"gcode_macro RatOS\"].nozzle_prime_start_x|float %}\n{% endif %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|lower == 'min' %}\n{% set y_start = 5 %}\n{% set y_factor = 1 %}\n{% elif printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|lower == 'max' %}\n{% set y_start = printer.toolhead.axis_maximum.y - 5 %}\n{% set y_factor = -1 %}\n{% else %}\n{% set y_start = printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|float %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|float < printer.toolhead.axis_maximum.y / 2 %}\n{% set y_factor = 1 %}\n{% else %}\n{% set y_factor = -1 %}\n{% endif %}\n{% endif %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_prime_direction|lower == 'forwards' %}\n{% set y_factor = 1 %}\n{% elif printer[\"gcode_macro RatOS\"].nozzle_prime_direction|lower == 'backwards' %}\n{% set y_factor = -1 %}\n{% endif %}\n{% set z = printer[\"gcode_macro RatOS\"].start_print_park_z_height|float %}\n\nG90\n\nM83\n\nG0 Z{z} F{z_speed}\n\nG1 X{x_start} F{speed}\nG1 Y{y_start + (15 * y_factor)} F{speed}\n\nG1 Z0.5 F{z_speed}\n\nG1 Y{y_start} F{speed}\n\nG1 F60 E20\n\nM106 S102\n\nG1 Z5 F100 E5\n\nG1 F200 Y{y_start + (25 * y_factor)} E1\n\n\n\nG1 F200 Y{y_start + (30 * y_factor)} Z3.8 E0.5\nG1 F200 Y{y_start + (35 * y_factor)} Z2.6 E0.5\nG1 F200 Y{y_start + (40 * y_factor)} Z1.4 E0.5\nG1 F200 Y{y_start + (45 * y_factor)} Z0.2 E0.5\n\nM106 S0\n\nG1 F200 Y{y_start + (50 * y_factor)} Z0.2 E0.6\n\nG1 F{speed} Y{y_start + (100 * y_factor)}\nRESTORE_GCODE_STATE NAME=prime_blob_state",
+                        "description": "Prints a primeblob, used internally, if configured, as part of the START_PRINT macro. Slower than PRIME_LINE but much more effective."
+                    },
+                    "gcode_macro _park": {
+                        "gcode": "\n{% set speed = printer[\"gcode_macro RatOS\"].macro_travel_speed|float * 60 %}\n\n{% if params.X != '' %}\n{% if params.X|float >= printer.toolhead.axis_minimum.x + 5 and params.X|float <= printer.toolhead.axis_maximum.x - 5 %}\n{% set safe_x = params.X|float %}\n{% else %}\n{action_respond_info('The requested X co-ordinate is outside the defined axis bounds - using defaults')}\n{% set safe_x = printer.toolhead.axis_maximum.x / 2 %}\n{% endif %}\n{% else %}\n{% set safe_x = printer.toolhead.axis_maximum.x / 2 %}\n{% endif %}\n\n{% if params.LOCATION|default('back')|lower == 'back' %}\n{% set y = printer.toolhead.axis_maximum.y - 5 %}\n{% elif params.LOCATION|lower == 'front' %}\n{% set y = printer.toolhead.axis_minimum.y + 5 %}\n{% elif params.LOCATION|lower == 'center' %}\n{% set y = printer.toolhead.axis_maximum.y / 2 %}\n{% endif %}\n\nG90\n\nG0 X{safe_x} Y{y} F{speed}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro m600": {
+                        "gcode": "\nPAUSE\nUNLOAD_FILAMENT\nM117 Please load new filament and resume\nRESPOND MSG=\"Please load new filament and resume\"",
+                        "description": "Executes a color change by pausing the printer an unloading the filament."
+                    },
+                    "gcode_macro unload_filament": {
+                        "gcode": "\nSAVE_GCODE_STATE NAME=unload_state\nG91\n{% if params.TEMP is defined or printer.extruder.can_extrude|lower == 'false' %}\nM117 Heating...\n\nM104 S{params.TEMP|default(220, true)}\nTEMPERATURE_WAIT SENSOR=extruder MINIMUM={params.TEMP|default(220, true)}\n{% endif %}\n{% set unload_speed = printer[\"gcode_macro RatOS\"].filament_unload_speed|float * 60 %}\n{% set unload_length = printer[\"gcode_macro RatOS\"].filament_unload_length|float %}\nM117 Unloading filament...\n\nG0 E10 F300\n\nG0 E-5 F3600\n\nG4 P3000\n\nG0 E5 F3600\n\nG0 E-15 F3600\n\nG0 E-{unload_length} F{unload_speed}\nM117 Filament unloaded!\nRESPOND MSG=\"Filament unloaded! Please inspect the tip of the filament before reloading.\"\nRESTORE_GCODE_STATE NAME=unload_state",
+                        "description": "Unloads the filament. Note: be careful with PETG, make sure you inspect the tip of your filament before reloading to avoid jams."
+                    },
+                    "gcode_macro load_filament": {
+                        "gcode": "\nSAVE_GCODE_STATE NAME=load_state\nG91\n\n{% if params.TEMP is defined or printer.extruder.can_extrude|lower == 'false' %}\nM117 Heating...\nM104 S{params.TEMP|default(220, true)}\nTEMPERATURE_WAIT SENSOR=extruder MINIMUM={params.TEMP|default(220, true)}\n{% endif %}\n{% set load_speed = printer[\"gcode_macro RatOS\"].filament_load_speed|float * 60 %}\n{% set load_length = printer[\"gcode_macro RatOS\"].filament_load_length|float %}\nM117 Loading filament...\n\nG0 E{load_length} F{load_speed}\n\nG4 P1000\n\nG0 E40 F100\n\nM400\nM117 Filament loaded!\nRESPOND MSG=\"Filament loaded!\"\nRESTORE_GCODE_STATE NAME=load_state",
+                        "description": "Loads new filament. Note: be careful with PETG, make sure you inspect the tip of your filament before loading to avoid jams."
+                    },
+                    "gcode_macro set_center_kinematic_position": {
+                        "gcode": "\nRESPOND MSG=\"WARNING: ONLY USE SET_CENTER_KINEMATIC_POSITION FOR DEBUGGING PURPOSES. YOU'RE OVERRIDING THE INTERNAL POSITIONING STATE OF THE PRINTER. PROCEED WITH CAUTION AND DO A PROPER G28 WHEN DONE.\"\nSET_GCODE_VARIABLE MACRO=MAYBE_HOME VARIABLE=is_kinematic_position_overriden VALUE=True\nSET_KINEMATIC_POSITION X={printer.toolhead.axis_maximum.x / 2} Y={printer.toolhead.axis_maximum.y / 2} Z={printer.toolhead.axis_maximum.z / 2}",
+                        "description": "FOR DEBUGGING PURPOSES ONLY. Sets the internal printer kinematic state to the center of all axes regardless of actual physical position."
+                    },
+                    "gcode_macro start_print": {
+                        "gcode": "\nCLEAR_PAUSE\n{% if printer[\"gcode_macro RatOS\"].force_absolute_position|lower == 'true' %}\nG90\n{% endif %}\nSAVE_GCODE_STATE NAME=start_print_state\n\nG21\n\nG90\n\nM82\n_USER_START_PRINT_BEFORE_HOMING\n{% if printer[\"gcode_macro RatOS\"].z_probe|lower == 'stowable' %}\nSTOWABLE_PROBE_BEGIN_BATCH\n{% endif %}\n\nMAYBE_HOME\n{% if params.CHAMBER_TEMP is defined %}\n_START_PRINT_HEAT_CHAMBER CHAMBER_TEMP={params.CHAMBER_TEMP} BED_TEMP={printer[\"gcode_macro RatOS\"].start_print_heat_chamber_bed_temp}\n_USER_START_PRINT_HEAT_CHAMBER CHAMBER_TEMP={params.CHAMBER_TEMP} BED_TEMP={printer[\"gcode_macro RatOS\"].start_print_heat_chamber_bed_temp}\n{% endif %}\nM117 Heating bed...\nRESPOND MSG=\"Heating bed...\"\n\nM190 S{params.BED_TEMP|default(printer.heater_bed.target, true) }\n\n_USER_START_PRINT_AFTER_HEATING_BED\n\n_START_PRINT_AFTER_HEATING_BED\n\n_USER_START_PRINT_BED_MESH\n\n_START_PRINT_BED_MESH X0={params.X0} X1={params.X1} Y0={params.Y0} Y1={params.Y1}\n{% if printer[\"gcode_macro RatOS\"].z_probe|lower == 'stowable' %}\nSTOWABLE_PROBE_END_BATCH\n{% endif %}\n\nM104 S{params.EXTRUDER_TEMP|default(printer.extruder.target, true) }\n\n_USER_START_PRINT_PARK\n\n_START_PRINT_PARK\n\nM117 Heating Extruder...\nRESPOND MSG=\"Heating Extruder...\"\nM109 S{params.EXTRUDER_TEMP|default(printer.extruder.target, true) }\n\n_USER_START_PRINT_AFTER_HEATING_EXTRUDER\n\n_START_PRINT_AFTER_HEATING_EXTRUDER\nM117 Printing...\nRESPOND MSG=\"Printing...\"\nRESTORE_GCODE_STATE NAME=start_print_state\n\n{% if printer[\"gcode_macro RatOS\"].relative_extrusion|lower == 'true' %}\nM83\n{% else %}\nM82\n{% endif %}\nG92 E0",
+                        "description": "Start print procedure, use this in your Slicer."
+                    },
+                    "gcode_macro _user_start_print_before_homing": {
+                        "gcode": "",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _start_print_after_heating_bed": {
+                        "gcode": "\n{% if printer[\"gcode_macro RatOS\"].preheat_extruder|lower == 'true' %}\n{% set min_temp = printer[\"gcode_macro RatOS\"].preheat_extruder_temp|float %}\n{% set max_temp = printer[\"gcode_macro RatOS\"].preheat_extruder_temp|float + 5 %}\nM117 Pre-heating extruder...\nRESPOND MSG=\"Pre-heating extruder...\"\n\n\nM104 S{min_temp}\nTEMPERATURE_WAIT SENSOR=extruder MINIMUM={min_temp} MAXIMUM={max_temp}\n{% endif %}\n\nM117 Quad gantry leveling...\nRESPOND MSG=\"Quad gantry leveling...\"\nQUAD_GANTRY_LEVEL\nM117 Rehoming Z after quad gantry leveling...\nRESPOND MSG=\"Rehoming Z after quad gantry leveling...\"\n\nG28 Z",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _user_start_print_after_heating_bed": {
+                        "gcode": "",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _start_print_bed_mesh": {
+                        "gcode": "\n{% set default_profile = printer[\"gcode_macro RatOS\"].bed_mesh_profile|default('ratos') %}\n{% if printer[\"gcode_macro RatOS\"].calibrate_bed_mesh|lower == 'true' %}\nBED_MESH_CLEAR\n{% if printer[\"gcode_macro RatOS\"].adaptive_mesh|lower == 'true' %}\nCALIBRATE_ADAPTIVE_MESH PROFILE={default_profile} X0={params.X0} X1={params.X1} Y0={params.Y0} Y1={params.Y1}\n{% else %}\nBED_MESH_CALIBRATE PROFILE={default_profile}\n{% endif %}\nBED_MESH_PROFILE LOAD={default_profile}\n{% elif printer[\"gcode_macro RatOS\"].bed_mesh_profile is defined %}\nBED_MESH_CLEAR\nBED_MESH_PROFILE LOAD={printer[\"gcode_macro RatOS\"].bed_mesh_profile}\n{% endif %}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _user_start_print_bed_mesh": {
+                        "gcode": "",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _start_print_park": {
+                        "gcode": "\n{% set z = printer[\"gcode_macro RatOS\"].start_print_park_z_height|float %}\n{% set zSpeed = printer[\"gcode_macro RatOS\"].macro_z_speed|float * 60 %}\n_PARK LOCATION={printer[\"gcode_macro RatOS\"].start_print_park_in} X={printer[\"gcode_macro RatOS\"].start_print_park_x}\nG0 Z{z} F{zSpeed}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _user_start_print_park": {
+                        "gcode": "",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _start_print_after_heating_extruder": {
+                        "gcode": "\n{% set has_offset = printer[\"gcode_macro RatOS\"].probe_for_priming_result|float(9999.9) != 9999.9 %}\n{% if has_offset %}\nADD_PRIME_PROBE_TO_OFFSET\n{% endif %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_priming|lower == 'primeline' %}\nPRIME_LINE\n{% endif %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_priming|lower == 'primeblob' %}\nPRIME_BLOB\n{% endif %}\n{% if has_offset %}\nSUBTRACT_PRIME_PROBE_FROM_OFFSET\n{% endif %}\n{% if printer[\"gcode_macro RatOS\"].skew_profile is defined %}\nSKEW_PROFILE LOAD={printer[\"gcode_macro RatOS\"].skew_profile}\n{% endif %}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _user_start_print_after_heating_extruder": {
+                        "gcode": "",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _start_print_heat_chamber": {
+                        "gcode": "\n{% if params.CHAMBER_TEMP is defined and params.BED_TEMP is defined and params.CHAMBER_TEMP|int > 0 %}\n{% set z = printer[\"gcode_macro RatOS\"].start_print_park_z_height|float %}\n{% set zSpeed = printer[\"gcode_macro RatOS\"].macro_z_speed|float * 60 %}\nG0 Z{z} F{zSpeed}\nM84\nM117 Heating chamber...\nRESPOND MSG=\"Heating chamber...\"\nM140 S{params.BED_TEMP}\nTEMPERATURE_WAIT SENSOR=extruder MINIMUM={params.CHAMBER_TEMP}\nMAYBE_HOME\n{% endif %}",
+                        "description": "Uses the extruder sensor to wait for chamber temp. Override the _START_PRINT_HEAT_CHAMBER macro to implement heated chamber handling."
+                    },
+                    "gcode_macro _user_start_print_heat_chamber": {
+                        "gcode": "",
+                        "description": "Uses the extruder sensor to wait for chamber temp. Override the _START_PRINT_HEAT_CHAMBER macro to implement heated chamber handling."
+                    },
+                    "gcode_macro end_print": {
+                        "gcode": "\nSAVE_GCODE_STATE NAME=end_print_state\n_USER_END_PRINT_BEFORE_HEATERS_OFF\n_END_PRINT_BEFORE_HEATERS_OFF\nTURN_OFF_HEATERS\n_USER_END_PRINT_AFTER_HEATERS_OFF\n_END_PRINT_AFTER_HEATERS_OFF\n_USER_END_PRINT_PARK\n_END_PRINT_PARK\n\n{% if printer[\"gcode_macro RatOS\"].skew_profile is defined %}\nSET_SKEW CLEAR=1\n{% endif %}\n\nM84\n\nM107\n\nBED_MESH_CLEAR\nM117 Done :)\nRESPOND MSG=\"Done :)\"\nRESTORE_GCODE_STATE NAME=end_print_state",
+                        "description": "End print procedure, use this in your Slicer."
+                    },
+                    "gcode_macro _end_print_before_heaters_off": {
+                        "gcode": "\nRESPOND MSG=\"Cleaning up...\"",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _user_end_print_before_heaters_off": {
+                        "gcode": "",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _end_print_after_heaters_off": {
+                        "gcode": "\n\n{% set max_z = printer.toolhead.axis_maximum.z|float %}\n{% set act_z = printer.toolhead.position.z|float %}\n{% set z_hop = printer[\"gcode_macro RatOS\"].end_print_park_z_hop|float %}\n{% if act_z < (max_z - z_hop) %}\n{% set z_safe = z_hop %}\n{% else %}\n{% set z_safe = max_z - act_z %}\n{% endif %}\n\nG91\n\nG1 E-2 F3600\n\nG0 Z{z_safe} F3600\n\nG1 E-2 F3600\n\nG90",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _user_end_print_after_heaters_off": {
+                        "gcode": "",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _end_print_park": {
+                        "gcode": "\n_PARK LOCATION={printer[\"gcode_macro RatOS\"].end_print_park_in} X={printer[\"gcode_macro RatOS\"].end_print_park_x}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _user_end_print_park": {
+                        "gcode": "",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro save_probe_result": {
+                        "gcode": "\n{% set last_z = printer.probe.last_z_result %}\nSET_GCODE_VARIABLE MACRO=RatOS VARIABLE={params.VARIABLE|default('last_z')} VALUE={last_z}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro probe_for_priming": {
+                        "gcode": "\n{% if printer[\"gcode_macro RatOS\"].nozzle_priming|lower != 'false' %}\nSAVE_GCODE_STATE NAME=probe_for_priming_state\nRESPOND MSG=\"Probing the prime location..\"\n{% set speed = printer[\"gcode_macro RatOS\"].macro_travel_speed|float * 60 %}\n{% set z_speed = printer[\"gcode_macro RatOS\"].macro_z_speed|float * 60 %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_prime_start_x|lower == 'min' %}\n{% set x_start = 5 %}\n{% elif printer[\"gcode_macro RatOS\"].nozzle_prime_start_x|lower == 'max' %}\n{% set x_start = printer.toolhead.axis_maximum.x - 5 %}\n{% else %}\n{% set x_start = printer[\"gcode_macro RatOS\"].nozzle_prime_start_x|float %}\n{% endif %}\n{% if printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|lower == 'min' %}\n{% set y_start = 5 %}\n{% elif printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|lower == 'max' %}\n{% set y_start = printer.toolhead.axis_maximum.y - 5 %}\n{% else %}\n{% set y_start = printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|float %}\n{% endif %}\n{% set z = printer.configfile.settings.bed_mesh.horizontal_move_z|float %}\n\n{% set mesh_config = printer.configfile.config.bed_mesh %}\n\n\n{% if printer.configfile.settings.bltouch is defined %}\n{% set x_offset = printer.configfile.settings.bltouch.x_offset|float %}\n{% set y_offset = printer.configfile.settings.bltouch.y_offset|float %}\n{% elif printer.configfile.settings.probe is defined %}\n{% set x_offset = printer.configfile.settings.probe.x_offset|float %}\n{% set y_offset = printer.configfile.settings.probe.y_offset|float %}\n{% elif printer.configfile.settings.beacon is defined %}\n{% set x_offset = printer.configfile.settings.beacon.x_offset|float %}\n{% set y_offset = printer.configfile.settings.beacon.y_offset|float %}\n{% else %}\n{ action_raise_error(\"No probe or bltouch section found. Adaptive priming only works with [probe] or [bltouch].\") }\n{% endif %}\n\n\n{% set min_x = mesh_config.mesh_min.split(\",\")[0]|float - x_offset %}\n{% set min_y = mesh_config.mesh_min.split(\",\")[1]|float - y_offset %}\n{% set max_x = mesh_config.mesh_max.split(\",\")[0]|float - x_offset %}\n{% set max_y = mesh_config.mesh_max.split(\",\")[1]|float - y_offset %}\n\n\n{% set x_start = [[x_start, max_x]|min, min_x]|max %}\n{% set y_start = [[y_start, max_y]|min, min_y]|max %}\n\nRESPOND MSG=\"PROBE_FOR_PRIMING: Probing the prime location at X: {x_start} Y: {y_start}\"\n\n\nG90\n\nM83\n\nG0 Z{z} F{z_speed}\n\nG1 X{x_start} Y{y_start} F{speed}\nPROBE_CURRENT_POSITION\nSAVE_PROBE_RESULT VARIABLE=probe_for_priming_result\n\nRESTORE_GCODE_STATE NAME=probe_for_priming_state\n{% endif %}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro reset_prime_probe_state": {
+                        "gcode": "\nSET_GCODE_VARIABLE MACRO=RatOS VARIABLE=probe_for_priming_result VALUE=None",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro probe_current_position": {
+                        "gcode": "\nSAVE_GCODE_STATE NAME=probe_current_position_state\n{% if printer[\"gcode_macro RatOS\"].z_probe|lower == 'stowable' %}\nASSERT_PROBE_DEPLOYED\n{% endif %}\nPROBE\nRESTORE_GCODE_STATE NAME=probe_current_position_state MOVE=1 MOVE_SPEED={printer[\"gcode_macro RatOS\"].macro_z_speed|float}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro add_prime_probe_to_offset": {
+                        "gcode": "\n{% set last_z = printer[\"gcode_macro RatOS\"].probe_for_priming_result|float(9999.9) %}\n{% if printer.configfile.settings.bltouch is defined %}\n{% set z_offset = printer.configfile.settings.bltouch.z_offset|float %}\n{% elif printer.configfile.settings.probe is defined %}\n{% set z_offset = printer.configfile.settings.probe.z_offset|float %}\n{% else %}\n{ action_raise_error(\"No probe or bltouch section found. Adaptive priming only works with [probe] or [bltouch].\") }\n{% endif %}\n{% if last_z == 9999.9 %}\n{ action_raise_error(\"No probe result found for prime area. This is likely a bug.\") }\n{% endif %}\n{% set adjustment = last_z - z_offset %}\n{% set adjustment_threshold = printer[\"gcode_macro RatOS\"].adaptive_prime_offset_threshold|float %}\n{% if adjustment < adjustment_threshold %}\n{ action_raise_error(\"Abnormal probe offset detected. Needed offset of {adjustment} is below the offset threshold of -1mm. Please verify the probe is over the bed when probing for priming. If it isn't, you should adjust you min/max bed_mesh settings so the probe is always over the print area.\") }\n{% endif %}\nRESPOND MSG=\"ADD_PRIME_PROBE_TO_OFFSET: adjusting z offset by {adjustment}\"\nSET_GCODE_OFFSET Z_ADJUST={adjustment} MOVE=1",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro subtract_prime_probe_from_offset": {
+                        "gcode": "\n{% set last_z = printer[\"gcode_macro RatOS\"].probe_for_priming_result|float(9999.9) %}\n{% if printer.configfile.settings.bltouch is defined %}\n{% set z_offset = printer.configfile.settings.bltouch.z_offset|float %}\n{% elif printer.configfile.settings.probe is defined %}\n{% set z_offset = printer.configfile.settings.probe.z_offset|float %}\n{% else %}\n{ action_raise_error(\"No probe or bltouch section found. Adaptive priming only works with [probe] or [bltouch].\") }\n{% endif %}\n{% if last_z == 9999.9 %}\n{ action_raise_error(\"No probe result found for prime area. This is likely a bug.\") }\n{% endif %}\nRESPOND MSG=\"SUBTRACT_PRIME_PROBE_FROM_OFFSET: adjusting z offset by {z_offset - last_z}\"\nSET_GCODE_OFFSET Z_ADJUST={z_offset - last_z} MOVE=1",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro calibrate_adaptive_mesh": {
+                        "gcode": "\n\n{% set default_profile = params.PROFILE %}\n\n\n{% set x0 = params.X0|default(-1)|float %}\n{% set y0 = params.Y0|default(-1)|float %}\n{% set x1 = params.X1|default(-1)|float %}\n{% set y1 = params.Y1|default(-1)|float %}\nRESPOND MSG=\"CALIBRATE_ADAPTIVE_MESH: Recieved coordinates X0={x0} Y0={y0} X1={x1} Y1={y1}\"\n\n{% if x0 >= x1 or y0 >= y1 %}\n\nRESPOND MSG=\"CALIBRATE_ADAPTIVE_MESH: Invalid coordinates received. Please check your slicer settings. Falling back to full bed mesh.\"\nBED_MESH_CALIBRATE PROFILE={default_profile}\n{% else %}\n\n{% set mesh_config = printer.configfile.config.bed_mesh %}\n\n\n{% set min_x = mesh_config.mesh_min.split(\",\")[0]|float %}\n{% set min_y = mesh_config.mesh_min.split(\",\")[1]|float %}\n{% set max_x = mesh_config.mesh_max.split(\",\")[0]|float %}\n{% set max_y = mesh_config.mesh_max.split(\",\")[1]|float %}\n\n\n{% set mesh_x0 = [[x0, max_x]|min, min_x]|max %}\n{% set mesh_y0 = [[y0, max_y]|min, min_y]|max %}\n{% set mesh_x1 = [[x1, max_x]|min, min_x]|max %}\n{% set mesh_y1 = [[y1, max_y]|min, min_y]|max %}\n\n{% if mesh_x0 == min_x and mesh_y0 == min_y and mesh_x1 == max_x and mesh_y1 == max_y %}\n\nRESPOND MSG=\"CALIBRATE_ADAPTIVE_MESH: Print is using the full bed, falling back to full bed mesh.\"\nBED_MESH_CALIBRATE PROFILE={default_profile}\n{% else %}\n{% if printer[\"gcode_macro RatOS\"].z_probe|lower == 'stowable' %}\nDEPLOY_PROBE\n{% endif %}\n\n{% set probe_count_x = mesh_config.probe_count.split(\",\")[0]|int %}\n{% if mesh_config.probe_count.split(\",\")|length == 2 %}\n{% set probe_count_y = mesh_config.probe_count.split(\",\")[1]|int %}\n{% else %}\n{% set probe_count_y = mesh_config.probe_count.split(\",\")[0]|int %}\n{% endif %}\n\n\n{% set probe_x_step = (max_x - min_x) / probe_count_x %}\n{% set probe_y_step = (max_y - min_y) / probe_count_y %}\n\n\n{% set mesh_count_x = ([(mesh_x1 - mesh_x0) / probe_x_step, 3]|max)|int %}\n{% set mesh_count_y = ([(mesh_y1 - mesh_y0) / probe_y_step, 3]|max)|int %}\n{% set min_mesh_count = [mesh_count_x, mesh_count_y]|min %}\n{% set max_mesh_count = [mesh_count_x, mesh_count_y]|max %}\n\n\n{% set algorithm = mesh_config.algorithm %}\n{% if algorithm|lower == 'lagrange' and max_mesh_count > 6 %}\nRESPOND MSG=\"CALIBRATE_ADAPTIVE_MESH: cannot exceed a probe_count of 6 when using lagrange interpolation. Falling back to bicubic interpolation.\"\n{% set algorithm = 'bicubic' %}\n{% endif %}\n{% if algorithm|lower == 'bicubic' and min_mesh_count < 4 %}\n{% if max_mesh_count > 6 %}\nRESPOND MSG=\"CALIBRATE_ADAPTIVE_MESH: invalid probe_count option when using bicubic interpolation. Combination of 3 points on one axis with more than 6 on another is not permitted. Forcing minimum mesh count to be 4.\"\n{% set min_mesh_count = 4 %}\n{% else %}\nRESPOND MSG=\"CALIBRATE_ADAPTIVE_MESH: bicubic interpolation with a probe_count of less than 4 points detected. Forcing lagrange interpolation.\"\n{% set algorithm = 'lagrange' %}\n{% endif %}\n{% endif %}\n\n{% set mesh_count_x = ([min_mesh_count, mesh_count_x]|max)|int %}\n{% set mesh_count_x = ([max_mesh_count, mesh_count_x]|min)|int %}\n{% set mesh_count_y = ([min_mesh_count, mesh_count_y]|max)|int %}\n{% set mesh_count_y = ([max_mesh_count, mesh_count_y]|min)|int %}\n\n{% set should_prime = printer[\"gcode_macro RatOS\"].nozzle_priming == 'primeline' or printer[\"gcode_macro RatOS\"].nozzle_priming == 'primeblob' %}\n{% if printer.configfile.settings.beacon is defined %}\nRESPOND MSG=\"CALIBRATE_ADAPTIVE_MESH: adaptive priming is currently not supported for Beacon. Disabling priming..\"\nSET_GCODE_VARIABLE MACRO=RatOS VARIABLE=nozzle_priming VALUE=False\n{% set should_prime = False %}\n{% endif %}\n\n{% set prime_first = printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|lower == \"min\" or printer[\"gcode_macro RatOS\"].nozzle_prime_start_y|float(printer.toolhead.axis_maximum.y) < printer.toolhead.axis_maximum.y / 2 %}\n\n{% if should_prime and prime_first %}\nPROBE_FOR_PRIMING\n{% endif %}\n\nRESPOND MSG=\"CALIBRATE_ADAPTIVE_MESH: mesh coordinates X0={mesh_x0} Y0={mesh_y0} X1={mesh_x1} Y1={mesh_y1}\"\nBED_MESH_CALIBRATE PROFILE={default_profile} algorithm={algorithm} mesh_min={mesh_x0},{mesh_y0} mesh_max={mesh_x1},{mesh_y1} probe_count={mesh_count_x},{mesh_count_y} relative_reference_index=-1\n\n{% if should_prime and not prime_first %}\nPROBE_FOR_PRIMING\n{% endif %}\n{% if printer[\"gcode_macro RatOS\"].z_probe|lower == 'stowable' %}\nSTOW_PROBE\n{% endif %}\n\n{% endif %}\n{% endif %}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_shell_command generate_shaper_graph_x": {
+                        "command": "/home/pi/printer_data/config/RatOS/scripts/generate-shaper-graph-x.sh",
+                        "timeout": 60,
+                        "verbose": true
+                    },
+                    "gcode_shell_command generate_shaper_graph_y": {
+                        "command": "/home/pi/printer_data/config/RatOS/scripts/generate-shaper-graph-y.sh",
+                        "timeout": 60,
+                        "verbose": true
+                    },
+                    "gcode_shell_command generate_belt_tension_graph": {
+                        "command": "/home/pi/printer_data/config/RatOS/scripts/generate-belt-tension-graph.sh",
+                        "timeout": 90,
+                        "verbose": true
+                    },
+                    "gcode_shell_command change_hostname": {
+                        "command": "/home/pi/printer_data/config/RatOS/scripts/change-hostname.sh",
+                        "timeout": 10,
+                        "verbose": true
+                    },
+                    "gcode_macro generate_shaper_graphs": {
+                        "gcode": "\n{% if params.AXIS is defined %}\n{% if params.AXIS|lower == 'x' %}\nMAYBE_HOME\nTEST_RESONANCES AXIS=X\nRUN_SHELL_COMMAND CMD=generate_shaper_graph_x\nRESPOND MSG=\"Input shaper graph generated for the X axis. You'll find it in the input_shaper folder in the machine tab!\"\n{% elif params.AXIS|lower == 'y' %}\nMAYBE_HOME\nTEST_RESONANCES AXIS=Y\nRUN_SHELL_COMMAND CMD=generate_shaper_graph_y\nRESPOND MSG=\"Input shaper graph generated for the Y axis. You'll find it in the input_shaper folder in the machine tab!\"\n{% else %}\n{action_raise_error(\"Unknown axis specified. Expected X or Y.\")}\n{% endif %}\n{% else %}\nMAYBE_HOME\nTEST_RESONANCES AXIS=X\nTEST_RESONANCES AXIS=Y\nRUN_SHELL_COMMAND CMD=generate_shaper_graph_x\nRUN_SHELL_COMMAND CMD=generate_shaper_graph_y\nRESPOND MSG=\"Input shaper graphs generated for X and Y. You'll find them in the input_shaper folder in the machine tab!\"\n{% endif %}",
+                        "description": "Genarates input shaper resonances graphs for analysis. Uses the AXIS parameter for if you only want to do one axis at a time, (eg. GENERATE_SHAPER_GRAPHS AXIS=X)"
+                    },
+                    "gcode_macro measure_corexy_belt_tension": {
+                        "gcode": "\nTEST_RESONANCES AXIS=1,1  OUTPUT=raw_data NAME=belt-tension-upper\nTEST_RESONANCES AXIS=1,-1 OUTPUT=raw_data NAME=belt-tension-lower\nRUN_SHELL_COMMAND CMD=generate_belt_tension_graph\nRESPOND MSG=\"Belt tension graphs generated. You'll find them in the input_shaper folder in the machine tab!\"",
+                        "description": "Generates resonance graph used to ensure belts are equally tensioned."
+                    },
+                    "gcode_macro change_hostname": {
+                        "gcode": "\n{% if params.HOSTNAME is not defined %}\nRESPOND MSG='You have to specify a new hostname with the HOSTNAME parameter. Ex: CHANGE_HOSTNAME HOSTNAME=\"MY_NEW_HOSTNAME\"'\nRESPOND MSG=\"Please note: RFCs mandate that a hostname's labels may contain only the ASCII letters 'a' through 'z' (case-insensitive), the digits '0' through '9', and the hyphen. Hostname labels cannot begin or end with a hyphen. No other symbols, punctuation characters, or blank spaces are permitted.\"\n{% else %}\nRUN_SHELL_COMMAND CMD=change_hostname PARAMS={params.HOSTNAME}\n{% endif %}",
+                        "description": "Change the hostname of your Raspberry Pi."
+                    },
+                    "gcode_macro quad_gantry_level": {
+                        "gcode": "\n{% if printer[\"gcode_macro RatOS\"].z_probe == 'stowable' %}\nDEPLOY_PROBE\n{% endif %}\nQUAD_GANTRY_LEVEL_ORIG\n{% if printer[\"gcode_macro RatOS\"].z_probe == 'stowable' %}\nSTOW_PROBE\n{% endif %}",
+                        "rename_existing": "QUAD_GANTRY_LEVEL_ORIG",
+                        "description": "G-Code macro"
+                    },
+                    "bed_mesh": {
+                        "zero_reference_position": [
+                            175,
+                            175
+                        ],
+                        "probe_count": [
+                            5,
+                            5
+                        ],
+                        "mesh_min": [
+                            40,
+                            40
+                        ],
+                        "mesh_max": [
+                            310,
+                            310
+                        ],
+                        "mesh_pps": [
+                            2,
+                            2
+                        ],
+                        "algorithm": "bicubic",
+                        "bicubic_tension": 0.2,
+                        "horizontal_move_z": 10,
+                        "speed": 300,
+                        "fade_start": 0.6,
+                        "fade_end": 10,
+                        "split_delta_z": 0.025,
+                        "move_check_distance": 5
+                    },
+                    "quad_gantry_level": {
+                        "retries": 5,
+                        "retry_tolerance": 0.0075,
+                        "max_adjust": 10,
+                        "horizontal_move_z": 10,
+                        "points": [
+                            [
+                                50,
+                                25
+                            ],
+                            [
+                                50,
+                                275
+                            ],
+                            [
+                                300,
+                                275
+                            ],
+                            [
+                                300,
+                                25
+                            ]
+                        ],
+                        "speed": 300,
+                        "gantry_corners": [
+                            [
+                                -60,
+                                -10
+                            ],
+                            [
+                                410,
+                                420
+                            ]
+                        ]
+                    },
+                    "gcode_macro g32": {
+                        "gcode": "\nSAVE_GCODE_STATE NAME=STATE_G32\nG28 X Y\nSTOWABLE_PROBE_BEGIN_BATCH\nG28 Z\nQUAD_GANTRY_LEVEL\nG28 Z\nSTOWABLE_PROBE_END_BATCH\nRESTORE_GCODE_STATE NAME=STATE_G32",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro _assert_probe_state": {
+                        "gcode": "\n\n\n\n{% set last_query_state = \"stowed\" if printer.probe.last_query == 1 else \"deployed\" %}\n\n{% if params.TO_BE != last_query_state %}\n{% if printer[\"gcode_macro RatOS\"].stowable_probe_stop_on_error|lower == 'true' %}\n{ action_emergency_stop(\"expected probe state to be {} but is {} ({})\".format(params.TO_BE, last_query_state, printer.probe.last_query)) }\n{% else %}\n{ action_raise_error(\"expected probe state to be {} but is {} ({})\".format(params.TO_BE, last_query_state, printer.probe.last_query)) }\n{% endif %}\n{% else %}\n\nSET_GCODE_VARIABLE MACRO=RatOS VARIABLE=stowable_probe_state VALUE=\"'{ last_query_state }'\"\n{% endif %}",
+                        "description": "ensures probe is in a known state; QUERY_PROBE must have been called before this macro!"
+                    },
+                    "gcode_macro assert_probe_deployed": {
+                        "gcode": "\nM400\nG4 P100\n\nQUERY_PROBE\n_ASSERT_PROBE_STATE TO_BE=deployed",
+                        "description": "error if probe not deployed"
+                    },
+                    "gcode_macro assert_probe_stowed": {
+                        "gcode": "\nM400\nG4 P100\n\nQUERY_PROBE\n_ASSERT_PROBE_STATE TO_BE=stowed",
+                        "description": "error if probe not stowed"
+                    },
+                    "gcode_macro stowable_probe_begin_batch": {
+                        "gcode": "\nSET_GCODE_VARIABLE MACRO=RatOS VARIABLE=stowable_probe_batch_mode_enabled VALUE=True\nRESPOND TYPE=command MSG=\"Probe batch mode enabled\"",
+                        "description": "Begin stowable probe batch mode"
+                    },
+                    "gcode_macro stowable_probe_end_batch": {
+                        "gcode": "\nSET_GCODE_VARIABLE MACRO=RatOS VARIABLE=stowable_probe_batch_mode_enabled VALUE=False\nRESPOND TYPE=command MSG=\"Probe batch mode disabled\"\nSTOW_PROBE",
+                        "description": "End stowable probe batch mode and stow probe"
+                    },
+                    "gcode_macro deploy_probe": {
+                        "gcode": "\n{% set RatOS = printer[\"gcode_macro RatOS\"] %}\n{% set speed = RatOS.macro_travel_speed * 60 %}\n{% set z_hop = printer.configfile.config.ratos_homing.z_hop|float %}\n{% set z_hop_speed = printer.configfile.config.ratos_homing.z_hop_speed|float * 60 %}\n{% set z_homed = 'z' in printer.toolhead.homed_axes %}\n\n{% if RatOS.stowable_probe_batch_mode_enabled and RatOS.stowable_probe_state == \"deployed\" %}\nRESPOND TYPE=command MSG=\"Probe batch mode enabled: already deployed\"\n{% else %}\nRESPOND TYPE=command MSG=\"Deploying probe\"\n\nASSERT_PROBE_STOWED\n\nG90\n\n{% if z_homed %}\nG0 Z{ z_hop } F{z_hop_speed}\n{% endif %}\n\nG0 X{ RatOS.stowable_probe_position_preflight[0] } Y{ RatOS.stowable_probe_position_preflight[1] } F{ speed }\n\nG0 X{ RatOS.stowable_probe_position_side[0] } Y{ RatOS.stowable_probe_position_side[1] } F{ speed }\n\nG0 X{ RatOS.stowable_probe_position_dock[0] } Y{ RatOS.stowable_probe_position_dock[1] } F{ speed }\n\nG0 X{ RatOS.stowable_probe_position_exit[0] } Y{ RatOS.stowable_probe_position_exit[1] } F{ speed }\n\nG0 X{ RatOS.stowable_probe_position_preflight[0] } Y{ RatOS.stowable_probe_position_preflight[1] } F{ speed }\n\nASSERT_PROBE_DEPLOYED\n\n{% endif %}",
+                        "description": "Deploy a stowable probe"
+                    },
+                    "gcode_macro stow_probe": {
+                        "gcode": "\n{% set RatOS = printer[\"gcode_macro RatOS\"] %}\n{% set speed = RatOS.macro_travel_speed * 60 %}\n{% set z_hop = printer.configfile.config.ratos_homing.z_hop|float %}\n{% set z_hop_speed = printer.configfile.config.ratos_homing.z_hop_speed|float * 60 %}\n{% set z_homed = 'z' in printer.toolhead.homed_axes %}\n\n{% if RatOS.stowable_probe_batch_mode_enabled %}\nRESPOND TYPE=command MSG=\"Probe batch mode enabled: not stowing\"\n{% else %}\nRESPOND TYPE=command MSG=\"Stowing probe\"\n\nG90\n\n{% if z_homed %}\nG0 Z{ z_hop } F{z_hop_speed}\n{% endif %}\n\nASSERT_PROBE_DEPLOYED\n\nG0 X{ RatOS.stowable_probe_position_preflight[0] } Y{ RatOS.stowable_probe_position_preflight[1] } F{ speed }\n\nG0 X{ RatOS.stowable_probe_position_exit[0] } Y{ RatOS.stowable_probe_position_exit[1] } F{ speed }\n\nG0 X{ RatOS.stowable_probe_position_dock[0] } Y{ RatOS.stowable_probe_position_dock[1] } F{ speed }\n\nG0 X{ RatOS.stowable_probe_position_side[0] } Y{ RatOS.stowable_probe_position_side[1] } F{ speed }\n\nG0 X{ RatOS.stowable_probe_position_preflight[0] } Y{ RatOS.stowable_probe_position_preflight[1] } F{ speed }\n\nASSERT_PROBE_STOWED\n{% endif %}",
+                        "description": "Stow a stowable probe"
+                    },
+                    "gcode_macro bed_mesh_calibrate": {
+                        "gcode": "\n{% set args = [] %}\n{% for p in params %}\n{% if p == 'PROFILE' %}\n{% set tmp = args.append('%s=\"%s\"' % (p, params[p])) %}\n{% else %}\n{% set tmp = args.append('%s=%s' % (p, params[p])) %}\n{% endif %}\n{% endfor %}\nDEPLOY_PROBE\nBED_MESH_CALIBRATE_ORIG {args|join(' ')}\nSTOW_PROBE",
+                        "rename_existing": "BED_MESH_CALIBRATE_ORIG",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro probe_calibrate": {
+                        "gcode": "\n{% set args = [] %}\n{% for p in params %}\n{% set tmp = args.append('%s=%s' % (p, params[p])) %}\n{% endfor %}\n{% set RatOS = printer[\"gcode_macro RatOS\"] %}\n{% set speed = RatOS.macro_travel_speed * 60 %}\nDEPLOY_PROBE\nG90\nG0 X{ printer.toolhead.axis_maximum.x/2 } Y{ printer.toolhead.axis_maximum.y/2 } F{ speed }\nPROBE_CALIBRATE_ORIG {args|join(' ')}\nSAVE_GCODE_STATE name=probe_calibrate\nSTOW_PROBE\nRESTORE_GCODE_STATE name=probe_calibrate MOVE=1 MOVE_SPEED={RatOS.macro_travel_speed|float}",
+                        "rename_existing": "PROBE_CALIBRATE_ORIG",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro probe": {
+                        "gcode": "\n{% set args = [] %}\n{% for p in params %}\n{% set tmp = args.append('%s=%s' % (p, params[p])) %}\n{% endfor %}\nASSERT_PROBE_DEPLOYED\nPROBE_ORIG {args|join(' ')}",
+                        "rename_existing": "PROBE_ORIG",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro probe_accuracy": {
+                        "gcode": "\n{% set args = [] %}\n{% for p in params %}\n{% set tmp = args.append('%s=%s' % (p, params[p])) %}\n{% endfor %}\nASSERT_PROBE_DEPLOYED\nPROBE_ACCURACY_ORIG {args|join(' ')}",
+                        "rename_existing": "PROBE_ACCURACY_ORIG",
+                        "description": "G-Code macro"
+                    },
+                    "probe": {
+                        "z_offset": 3.25,
+                        "deactivate_on_each_sample": true,
+                        "activate_gcode": "",
+                        "deactivate_gcode": "",
+                        "pin": "PG15",
+                        "speed": 5,
+                        "lift_speed": 15,
+                        "x_offset": 0,
+                        "y_offset": 19.75,
+                        "samples": 4,
+                        "sample_retract_dist": 1,
+                        "samples_result": "average",
+                        "samples_tolerance": 0.1,
+                        "samples_tolerance_retries": 0
+                    },
+                    "resonance_tester": {
+                        "move_speed": 50,
+                        "min_freq": 5,
+                        "max_freq": 133.33333333333334,
+                        "accel_per_hz": 75,
+                        "hz_per_sec": 1,
+                        "probe_points": [
+                            [
+                                175,
+                                175,
+                                20
+                            ]
+                        ],
+                        "accel_chip": "adxl345"
+                    },
+                    "firmware_retraction": {
+                        "retract_length": 2,
+                        "retract_speed": 20,
+                        "unretract_extra_length": 0,
+                        "unretract_speed": 10
+                    },
+                    "tmc2209 stepper_x": {
+                        "uart_pin": "x_uart_pin",
+                        "uart_address": 0,
+                        "run_current": 0.8,
+                        "hold_current": 2,
+                        "sense_resistor": 0.11,
+                        "interpolate": false,
+                        "stealthchop_threshold": 0,
+                        "driver_multistep_filt": true,
+                        "driver_toff": 3,
+                        "driver_hstrt": 5,
+                        "driver_hend": 0,
+                        "driver_tbl": 2,
+                        "driver_iholddelay": 8,
+                        "driver_pwm_ofs": 36,
+                        "driver_pwm_grad": 14,
+                        "driver_pwm_freq": 1,
+                        "driver_pwm_autoscale": true,
+                        "driver_pwm_autograd": true,
+                        "driver_pwm_reg": 8,
+                        "driver_pwm_lim": 12,
+                        "driver_tpowerdown": 20,
+                        "driver_sgthrs": 0
+                    },
+                    "stepper_x": {
+                        "microsteps": 64,
+                        "step_pin": "x_step_pin",
+                        "dir_pin": "x_dir_pin",
+                        "rotation_distance": 40,
+                        "full_steps_per_rotation": 400,
+                        "gear_ratio": [],
+                        "enable_pin": "!x_enable_pin",
+                        "endstop_pin": "^x_endstop_pin",
+                        "position_endstop": 350,
+                        "position_min": 0,
+                        "position_max": 350,
+                        "homing_speed": 50,
+                        "second_homing_speed": 25,
+                        "homing_retract_speed": 50,
+                        "homing_retract_dist": 5,
+                        "homing_positive_dir": true
+                    },
+                    "tmc2209 stepper_y": {
+                        "uart_pin": "y_uart_pin",
+                        "uart_address": 0,
+                        "run_current": 0.8,
+                        "hold_current": 2,
+                        "sense_resistor": 0.11,
+                        "interpolate": false,
+                        "stealthchop_threshold": 0,
+                        "driver_multistep_filt": true,
+                        "driver_toff": 3,
+                        "driver_hstrt": 5,
+                        "driver_hend": 0,
+                        "driver_tbl": 2,
+                        "driver_iholddelay": 8,
+                        "driver_pwm_ofs": 36,
+                        "driver_pwm_grad": 14,
+                        "driver_pwm_freq": 1,
+                        "driver_pwm_autoscale": true,
+                        "driver_pwm_autograd": true,
+                        "driver_pwm_reg": 8,
+                        "driver_pwm_lim": 12,
+                        "driver_tpowerdown": 20,
+                        "driver_sgthrs": 0
+                    },
+                    "stepper_y": {
+                        "microsteps": 64,
+                        "step_pin": "y_step_pin",
+                        "dir_pin": "y_dir_pin",
+                        "rotation_distance": 40,
+                        "full_steps_per_rotation": 400,
+                        "gear_ratio": [],
+                        "enable_pin": "!y_enable_pin",
+                        "endstop_pin": "^y_endstop_pin",
+                        "position_endstop": 350,
+                        "position_min": 0,
+                        "position_max": 350,
+                        "homing_speed": 50,
+                        "second_homing_speed": 25,
+                        "homing_retract_speed": 50,
+                        "homing_retract_dist": 5,
+                        "homing_positive_dir": true
+                    },
+                    "tmc2209 stepper_z": {
+                        "uart_pin": "z0_uart_pin",
+                        "uart_address": 0,
+                        "run_current": 0.8,
+                        "hold_current": 2,
+                        "sense_resistor": 0.11,
+                        "interpolate": false,
+                        "stealthchop_threshold": 0,
+                        "driver_multistep_filt": true,
+                        "driver_toff": 3,
+                        "driver_hstrt": 5,
+                        "driver_hend": 0,
+                        "driver_tbl": 2,
+                        "driver_iholddelay": 8,
+                        "driver_pwm_ofs": 36,
+                        "driver_pwm_grad": 14,
+                        "driver_pwm_freq": 1,
+                        "driver_pwm_autoscale": true,
+                        "driver_pwm_autograd": true,
+                        "driver_pwm_reg": 8,
+                        "driver_pwm_lim": 12,
+                        "driver_tpowerdown": 20,
+                        "driver_sgthrs": 0
+                    },
+                    "stepper_z": {
+                        "microsteps": 64,
+                        "step_pin": "z0_step_pin",
+                        "dir_pin": "z0_dir_pin",
+                        "rotation_distance": 40,
+                        "full_steps_per_rotation": 200,
+                        "gear_ratio": [
+                            [
+                                80,
+                                16
+                            ]
+                        ],
+                        "enable_pin": "!z0_enable_pin",
+                        "endstop_pin": "probe:z_virtual_endstop",
+                        "position_min": -5,
+                        "position_max": 310,
+                        "homing_speed": 10,
+                        "second_homing_speed": 5,
+                        "homing_retract_speed": 10,
+                        "homing_retract_dist": 5,
+                        "homing_positive_dir": false
+                    },
+                    "tmc2209 stepper_z1": {
+                        "uart_pin": "z1_uart_pin",
+                        "uart_address": 0,
+                        "run_current": 0.8,
+                        "hold_current": 2,
+                        "sense_resistor": 0.11,
+                        "interpolate": false,
+                        "stealthchop_threshold": 0,
+                        "driver_multistep_filt": true,
+                        "driver_toff": 3,
+                        "driver_hstrt": 5,
+                        "driver_hend": 0,
+                        "driver_tbl": 2,
+                        "driver_iholddelay": 8,
+                        "driver_pwm_ofs": 36,
+                        "driver_pwm_grad": 14,
+                        "driver_pwm_freq": 1,
+                        "driver_pwm_autoscale": true,
+                        "driver_pwm_autograd": true,
+                        "driver_pwm_reg": 8,
+                        "driver_pwm_lim": 12,
+                        "driver_tpowerdown": 20,
+                        "driver_sgthrs": 0
+                    },
+                    "stepper_z1": {
+                        "microsteps": 64,
+                        "step_pin": "z1_step_pin",
+                        "dir_pin": "!z1_dir_pin",
+                        "rotation_distance": 40,
+                        "full_steps_per_rotation": 200,
+                        "gear_ratio": [
+                            [
+                                80,
+                                16
+                            ]
+                        ],
+                        "enable_pin": "!z1_enable_pin"
+                    },
+                    "tmc2209 stepper_z2": {
+                        "uart_pin": "z2_uart_pin",
+                        "uart_address": 0,
+                        "run_current": 0.8,
+                        "hold_current": 2,
+                        "sense_resistor": 0.11,
+                        "interpolate": false,
+                        "stealthchop_threshold": 0,
+                        "driver_multistep_filt": true,
+                        "driver_toff": 3,
+                        "driver_hstrt": 5,
+                        "driver_hend": 0,
+                        "driver_tbl": 2,
+                        "driver_iholddelay": 8,
+                        "driver_pwm_ofs": 36,
+                        "driver_pwm_grad": 14,
+                        "driver_pwm_freq": 1,
+                        "driver_pwm_autoscale": true,
+                        "driver_pwm_autograd": true,
+                        "driver_pwm_reg": 8,
+                        "driver_pwm_lim": 12,
+                        "driver_tpowerdown": 20,
+                        "driver_sgthrs": 0
+                    },
+                    "stepper_z2": {
+                        "microsteps": 64,
+                        "step_pin": "z2_step_pin",
+                        "dir_pin": "z2_dir_pin",
+                        "rotation_distance": 40,
+                        "full_steps_per_rotation": 200,
+                        "gear_ratio": [
+                            [
+                                80,
+                                16
+                            ]
+                        ],
+                        "enable_pin": "!z2_enable_pin"
+                    },
+                    "tmc2209 stepper_z3": {
+                        "uart_pin": "z3_uart_pin",
+                        "uart_address": 0,
+                        "run_current": 0.8,
+                        "hold_current": 2,
+                        "sense_resistor": 0.11,
+                        "interpolate": false,
+                        "stealthchop_threshold": 0,
+                        "driver_multistep_filt": true,
+                        "driver_toff": 3,
+                        "driver_hstrt": 5,
+                        "driver_hend": 0,
+                        "driver_tbl": 2,
+                        "driver_iholddelay": 8,
+                        "driver_pwm_ofs": 36,
+                        "driver_pwm_grad": 14,
+                        "driver_pwm_freq": 1,
+                        "driver_pwm_autoscale": true,
+                        "driver_pwm_autograd": true,
+                        "driver_pwm_reg": 8,
+                        "driver_pwm_lim": 12,
+                        "driver_tpowerdown": 20,
+                        "driver_sgthrs": 0
+                    },
+                    "stepper_z3": {
+                        "microsteps": 64,
+                        "step_pin": "z3_step_pin",
+                        "dir_pin": "!z3_dir_pin",
+                        "rotation_distance": 40,
+                        "full_steps_per_rotation": 200,
+                        "gear_ratio": [
+                            [
+                                80,
+                                16
+                            ]
+                        ],
+                        "enable_pin": "!z3_enable_pin"
+                    },
+                    "display": {
+                        "lcd_type": "uc1701",
+                        "cs_pin": "EXP1_3",
+                        "spi_speed": 10000000,
+                        "spi_software_sclk_pin": "EXP2_2",
+                        "spi_software_miso_pin": "EXP2_1",
+                        "spi_software_mosi_pin": "EXP2_6",
+                        "a0_pin": "EXP1_4",
+                        "contrast": 63,
+                        "rst_pin": "EXP1_5",
+                        "menu_root": "__main",
+                        "menu_timeout": 0,
+                        "menu_reverse_navigation": false,
+                        "encoder_pins": "^EXP2_5, ^EXP2_3",
+                        "encoder_steps_per_detent": 4,
+                        "encoder_fast_rate": 0.03,
+                        "click_pin": "^!EXP1_2",
+                        "display_group": "_default_16x4"
+                    },
+                    "neopixel btt_mini12864": {
+                        "pin": "EXP1_6",
+                        "chain_count": 3,
+                        "color_order": [
+                            "RGB"
+                        ],
+                        "initial_red": 0.1,
+                        "initial_green": 0.5,
+                        "initial_blue": 0,
+                        "initial_white": 0
+                    },
+                    "delayed_gcode setdisplayneopixel": {
+                        "gcode": "\nSET_LED LED=btt_mini12864 RED=1 GREEN=0 BLUE=0 INDEX=1 TRANSMIT=0\nSET_LED LED=btt_mini12864 RED=1 GREEN=0 BLUE=0 INDEX=2 TRANSMIT=0\nSET_LED LED=btt_mini12864 RED=1 GREEN=0 BLUE=0 INDEX=3",
+                        "initial_duration": 1
+                    },
+                    "gcode_macro clean_nozzle": {
+                        "gcode": "\n\n{% if \"xyz\" in printer.toolhead.homed_axes %}\n\n\nSAVE_GCODE_STATE NAME=clean_nozzle\n\n\nG90\n\n\n{% set Ry = printer.configfile.config[\"stepper_y\"][\"position_max\"]|float %}\n\n\n{% if enable_purge %}\n\n\nSET_GCODE_VARIABLE MACRO=clean_nozzle VARIABLE=bucket_pos VALUE={(range(2) | random)}\n\n\nG1 Z{brush_top + clearance_z} F{prep_spd_z}\n\n\n{% if location_bucket_rear %}\nG1 Y{Ry} F{prep_spd_xy}\n{% else %}\nG1 Y{brush_front + (brush_depth / 2)} F{prep_spd_xy}\n{% endif %}\n\n\nG1 X{bucket_start + (bucket_left_width / (2 - bucket_pos)) + (bucket_pos * bucket_gap) + (bucket_pos * (bucket_right_width / 2))}\n\n\n\n{% if printer.extruder.temperature >= purge_temp_min %}\nM83\nG1 E{purge_len} F{purge_spd}\nG1 E-{purge_ret} F{purge_spd * 5}\nG4 P{ooze_dwell * 1000}\nG92 E0\n{% endif %}\n\n{% endif %}\n\n\nG1 Z{brush_top + clearance_z} F{prep_spd_z}\nG1 X{brush_start + (brush_width * bucket_pos)} F{prep_spd_xy}\n\n\n{% if location_bucket_rear %}\nG1 Y{Ry}\n{% else %}\nG1 Y{brush_front + (brush_depth / 2)}\n{% endif %}\n\n\nG1 Z{brush_top} F{prep_spd_z}\n\n\n{% for wipes in range(1, (wipe_qty + 1)) %}\nG1 X{brush_start + (brush_width * (1 - bucket_pos))} F{wipe_spd_xy}\nG1 X{brush_start + (brush_width * bucket_pos)} F{wipe_spd_xy}\n{% endfor %}\n\n\nM117 Cleaned!\nG1 Z{brush_top + clearance_z} F{prep_spd_z}\nG1 X{bucket_start + (bucket_left_width / 4)} F{prep_spd_xy}\n\n\nRESTORE_GCODE_STATE NAME=clean_nozzle\n\n{% else %}\n\n\n{ action_raise_error(\"Please home your axes!\") }\nM117 Please home first!\n\n{% endif %}",
+                        "description": "G-Code macro",
+                        "variable_location_bucket_rear": "True",
+                        "variable_enable_purge": "False",
+                        "variable_purge_len": "25",
+                        "variable_purge_spd": "150",
+                        "variable_purge_temp_min": "220",
+                        "variable_purge_ret": "2",
+                        "variable_ooze_dwell": "2",
+                        "variable_brush_top": "1",
+                        "variable_clearance_z": "5",
+                        "variable_wipe_qty": "3",
+                        "variable_prep_spd_xy": "3000",
+                        "variable_prep_spd_z": "1500",
+                        "variable_wipe_spd_xy": "5000",
+                        "variable_brush_start": "83",
+                        "variable_brush_width": "65",
+                        "variable_brush_front": "0",
+                        "variable_brush_depth": "0",
+                        "variable_bucket_left_width": "65",
+                        "variable_bucket_right_width": "20",
+                        "variable_bucket_gap": "22",
+                        "variable_bucket_start": "5",
+                        "variable_bucket_pos": "1"
+                    },
+                    "thermistor t-d500": {
+                        "temperature1": 200,
+                        "resistance1": 8900,
+                        "temperature2": 275,
+                        "resistance2": 2250,
+                        "temperature3": 350,
+                        "resistance3": 785
+                    },
+                    "neopixel sb_leds": {
+                        "pin": "PB0",
+                        "chain_count": 3,
+                        "color_order": [
+                            "BRG"
+                        ],
+                        "initial_red": 1,
+                        "initial_green": 0,
+                        "initial_blue": 1,
+                        "initial_white": 0
+                    },
+                    "thermistor chamber_temp": {
+                        "temperature1": 25,
+                        "resistance1": 10000,
+                        "beta": 3950
+                    },
+                    "temperature_sensor chamber": {
+                        "sensor_type": "chamber_temp",
+                        "pullup_resistor": 4700,
+                        "inline_resistor": 0,
+                        "sensor_pin": "PF5",
+                        "min_temp": -273.15,
+                        "max_temp": 99999999.9
+                    },
+                    "delayed_gcode set_sb_leds": {
+                        "gcode": "\nSET_LED LED=sb_leds RED=1 GREEN=0 BLUE=0 INDEX=1 TRANSMIT=0\nSET_LED LED=sb_leds RED=1 GREEN=1 BLUE=1 INDEX=2 TRANSMIT=0\nSET_LED LED=sb_leds RED=1 GREEN=1 BLUE=1 INDEX=3",
+                        "initial_duration": 1
+                    },
+                    "board_pins mmu": {
+                        "mcu": [
+                            "mmu"
+                        ],
+                        "aliases": [
+                            [
+                                "MMU_GEAR_UART",
+                                "PA8"
+                            ],
+                            [
+                                "MMU_GEAR_STEP",
+                                "PA4"
+                            ],
+                            [
+                                "MMU_GEAR_DIR",
+                                "PA10"
+                            ],
+                            [
+                                "MMU_GEAR_ENABLE",
+                                "PA2"
+                            ],
+                            [
+                                "MMU_GEAR_DIAG",
+                                ""
+                            ],
+                            [
+                                "MMU_SEL_STEP",
+                                "PA9"
+                            ],
+                            [
+                                "MMU_SEL_DIR",
+                                "PB8"
+                            ],
+                            [
+                                "MMU_SEL_ENABLE",
+                                "PA11"
+                            ],
+                            [
+                                "MMU_SEL_DIAG",
+                                "PA7"
+                            ],
+                            [
+                                "MMU_SEL_ENDSTOP",
+                                "PB9"
+                            ],
+                            [
+                                "MMU_SERVO",
+                                "PA5"
+                            ],
+                            [
+                                "MMU_ENCODER",
+                                "PA6"
+                            ]
+                        ]
+                    },
+                    "board_pins mcu": {
+                        "mcu": [
+                            "mcu"
+                        ],
+                        "aliases": [
+                            [
+                                "E_TMCUART",
+                                "e_uart_pin"
+                            ],
+                            [
+                                "E_DIAG",
+                                "e_diag_pin"
+                            ],
+                            [
+                                "E_STEP",
+                                "e_step_pin"
+                            ],
+                            [
+                                "E_DIR",
+                                "e_dir_pin"
+                            ],
+                            [
+                                "E_ENABLE",
+                                "e_enable_pin"
+                            ],
+                            [
+                                "TOOLHEAD_SENSOR",
+                                "<set_me>"
+                            ]
+                        ]
+                    },
+                    "tmc2209 manual_extruder_stepper extruder": {
+                        "uart_pin": "E_TMCUART",
+                        "uart_address": 0,
+                        "run_current": 0.55,
+                        "hold_current": 0.4,
+                        "sense_resistor": 0.11,
+                        "interpolate": true,
+                        "stealthchop_threshold": 0,
+                        "driver_multistep_filt": true,
+                        "driver_toff": 3,
+                        "driver_hstrt": 5,
+                        "driver_hend": 0,
+                        "driver_tbl": 2,
+                        "driver_iholddelay": 8,
+                        "driver_pwm_ofs": 36,
+                        "driver_pwm_grad": 14,
+                        "driver_pwm_freq": 1,
+                        "driver_pwm_autoscale": true,
+                        "driver_pwm_autograd": true,
+                        "driver_pwm_reg": 8,
+                        "driver_pwm_lim": 12,
+                        "driver_tpowerdown": 20,
+                        "driver_sgthrs": 0
+                    },
+                    "manual_extruder_stepper extruder": {
+                        "microsteps": 64,
+                        "step_pin": "e_step_pin",
+                        "dir_pin": "!e_dir_pin",
+                        "rotation_distance": 8.698,
+                        "full_steps_per_rotation": 400,
+                        "gear_ratio": [],
+                        "enable_pin": "!e_enable_pin",
+                        "position_endstop": 0,
+                        "homing_speed": 5,
+                        "second_homing_speed": 2.5,
+                        "homing_retract_speed": 5,
+                        "homing_retract_dist": 5,
+                        "homing_positive_dir": false,
+                        "extra_endstop_pins": [],
+                        "extra_endstop_names": [],
+                        "velocity": 5,
+                        "accel": 0,
+                        "pressure_advance": 0.03,
+                        "pressure_advance_smooth_time": 0.04
+                    },
+                    "tmc2209 manual_extruder_stepper gear_stepper": {
+                        "uart_pin": "mmu:MMU_GEAR_UART",
+                        "uart_address": 0,
+                        "run_current": 0.6,
+                        "hold_current": 0.1,
+                        "sense_resistor": 0.11,
+                        "interpolate": true,
+                        "stealthchop_threshold": 0,
+                        "driver_multistep_filt": true,
+                        "driver_toff": 3,
+                        "driver_hstrt": 5,
+                        "driver_hend": 0,
+                        "driver_tbl": 2,
+                        "driver_iholddelay": 8,
+                        "driver_pwm_ofs": 36,
+                        "driver_pwm_grad": 14,
+                        "driver_pwm_freq": 1,
+                        "driver_pwm_autoscale": true,
+                        "driver_pwm_autograd": true,
+                        "driver_pwm_reg": 8,
+                        "driver_pwm_lim": 12,
+                        "driver_tpowerdown": 20,
+                        "driver_sgthrs": 0
+                    },
+                    "manual_extruder_stepper gear_stepper": {
+                        "microsteps": 16,
+                        "step_pin": "mmu:MMU_GEAR_STEP",
+                        "dir_pin": "!mmu:MMU_GEAR_DIR",
+                        "rotation_distance": 22.7316868,
+                        "full_steps_per_rotation": 200,
+                        "gear_ratio": [
+                            [
+                                80,
+                                20
+                            ]
+                        ],
+                        "enable_pin": "!mmu:MMU_GEAR_ENABLE",
+                        "position_endstop": 0,
+                        "homing_speed": 5,
+                        "second_homing_speed": 2.5,
+                        "homing_retract_speed": 5,
+                        "homing_retract_dist": 5,
+                        "homing_positive_dir": false,
+                        "extra_endstop_pins": [],
+                        "extra_endstop_names": [],
+                        "velocity": 100,
+                        "accel": 400,
+                        "pressure_advance": 0,
+                        "pressure_advance_smooth_time": 0.04
+                    },
+                    "tmc2209 manual_mh_stepper selector_stepper": {
+                        "uart_pin": "mmu:MMU_GEAR_UART",
+                        "uart_address": 1,
+                        "run_current": 0.4,
+                        "hold_current": 0.2,
+                        "sense_resistor": 0.11,
+                        "interpolate": true,
+                        "stealthchop_threshold": 100,
+                        "driver_multistep_filt": true,
+                        "driver_toff": 3,
+                        "driver_hstrt": 5,
+                        "driver_hend": 0,
+                        "driver_tbl": 2,
+                        "driver_iholddelay": 8,
+                        "driver_pwm_ofs": 36,
+                        "driver_pwm_grad": 14,
+                        "driver_pwm_freq": 1,
+                        "driver_pwm_autoscale": true,
+                        "driver_pwm_autograd": true,
+                        "driver_pwm_reg": 8,
+                        "driver_pwm_lim": 12,
+                        "driver_tpowerdown": 20,
+                        "driver_sgthrs": 0
+                    },
+                    "manual_mh_stepper selector_stepper": {
+                        "microsteps": 16,
+                        "endstop_pin": "^mmu:MMU_SEL_ENDSTOP",
+                        "step_pin": "mmu:MMU_SEL_STEP",
+                        "dir_pin": "!mmu:MMU_SEL_DIR",
+                        "rotation_distance": 40,
+                        "full_steps_per_rotation": 200,
+                        "gear_ratio": [],
+                        "enable_pin": "!mmu:MMU_SEL_ENABLE",
+                        "position_endstop": 0,
+                        "homing_speed": 5,
+                        "second_homing_speed": 2.5,
+                        "homing_retract_speed": 5,
+                        "homing_retract_dist": 5,
+                        "homing_positive_dir": false,
+                        "endstop_name": "mmu_sel_home",
+                        "extra_endstop_pins": [],
+                        "extra_endstop_names": [],
+                        "velocity": 200,
+                        "accel": 1200
+                    },
+                    "mmu_servo mmu_servo": {
+                        "minimum_pulse_width": 0.00085,
+                        "maximum_pulse_width": 0.00215,
+                        "maximum_servo_angle": 180,
+                        "initial_pulse_width": 0,
+                        "pin": "mmu:MMU_SERVO"
+                    },
+                    "mmu_encoder mmu_encoder": {
+                        "encoder_pin": "^mmu:MMU_ENCODER",
+                        "sample_time": 0.1,
+                        "poll_time": 0.001,
+                        "encoder_resolution": 1,
+                        "extruder": "extruder",
+                        "desired_headroom": 5,
+                        "average_samples": 4,
+                        "calibration_length": 10000,
+                        "detection_length": 10,
+                        "event_delay": 3,
+                        "runout_gcode": "__MMU_ENCODER_RUNOUT",
+                        "insert_gcode": "__MMU_ENCODER_INSERT",
+                        "flowrate_samples": 20
+                    },
+                    "mmu": {
+                        "mmu_vendor": "ERCF",
+                        "mmu_version": "1.1",
+                        "cad_bypass_block_width": 6,
+                        "cad_gate_width": 21,
+                        "encoder_default_resolution": 0.6764705882352942,
+                        "extruder": "extruder",
+                        "timeout_pause": 72000,
+                        "default_idle_timeout": -1,
+                        "disable_heater": 600,
+                        "default_extruder_temp": 200,
+                        "gcode_load_sequence": 0,
+                        "gcode_unload_sequence": 0,
+                        "z_hop_height_error": 5,
+                        "z_hop_height_toolchange": 0,
+                        "z_hop_speed": 15,
+                        "slicer_tip_park_pos": 0,
+                        "force_form_tip_standalone": 0,
+                        "persistence_level": 3,
+                        "auto_calibrate_gates": 0,
+                        "strict_filament_recovery": 0,
+                        "retry_tool_change_on_error": 0,
+                        "pause_macro": "PAUSE",
+                        "form_tip_macro": "_MMU_FORM_TIP_STANDALONE",
+                        "mmu_num_gates": 9,
+                        "selector_offsets": [],
+                        "selector_bypass": 0,
+                        "tool_to_gate_map": [],
+                        "gate_status": [],
+                        "gate_material": [],
+                        "gate_color": [],
+                        "gate_spool_id": [],
+                        "encoder_unload_buffer": 50,
+                        "encoder_unload_max": 100,
+                        "encoder_parking_distance": 23,
+                        "encoder_move_step_size": 15,
+                        "encoder_load_retries": 2,
+                        "bowden_num_moves": 1,
+                        "bowden_apply_correction": 0,
+                        "bowden_load_tolerance": 20,
+                        "bowden_unload_tolerance": 20,
+                        "extruder_force_homing": 0,
+                        "extruder_homing_endstop": "collision",
+                        "extruder_homing_max": 50,
+                        "extruder_collision_homing_step": 3,
+                        "toolhead_homing_max": 40,
+                        "toolhead_transition_length": 10,
+                        "toolhead_delay_servo_release": 2,
+                        "toolhead_extruder_to_nozzle": 92,
+                        "toolhead_sensor_to_nozzle": 62,
+                        "toolhead_ignore_load_error": 0,
+                        "toolhead_sync_load": 1,
+                        "toolhead_sync_unload": 0,
+                        "sync_to_extruder": 0,
+                        "sync_form_tip": 0,
+                        "servo_down_angle": 140,
+                        "servo_up_angle": 30,
+                        "servo_move_angle": 30,
+                        "servo_duration": 0.2,
+                        "servo_active_down": 0,
+                        "extruder_homing_current": 40,
+                        "extruder_form_tip_current": 100,
+                        "sync_gear_current": 50,
+                        "gear_short_move_speed": 60,
+                        "gear_from_buffer_speed": 160,
+                        "gear_from_spool_speed": 60,
+                        "gear_homing_speed": 50,
+                        "extruder_homing_speed": 20,
+                        "extruder_load_speed": 15,
+                        "extruder_unload_speed": 20,
+                        "extruder_sync_load_speed": 20,
+                        "extruder_sync_unload_speed": 25,
+                        "extruder_accel": 1000,
+                        "gear_buzz_accel": 2000,
+                        "selector_move_speed": 200,
+                        "selector_homing_speed": 60,
+                        "selector_touch_speed": 80,
+                        "selector_touch_enable": 0,
+                        "enable_clog_detection": 0,
+                        "enable_spoolman": 0,
+                        "enable_endless_spool": 0,
+                        "endless_spool_groups": [],
+                        "log_level": 1,
+                        "log_file_level": 3,
+                        "log_statistics": 1,
+                        "log_visual": 2,
+                        "log_startup_status": 1,
+                        "test_octoprint": 0,
+                        "test_random_failures": 0
+                    },
+                    "save_variables": {
+                        "filename": "/home/pi/printer_data/config/mmu/mmu_vars.cfg"
+                    },
+                    "gcode_macro t0": {
+                        "gcode": "MMU_CHANGE_TOOL TOOL=0",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro t1": {
+                        "gcode": "MMU_CHANGE_TOOL TOOL=1",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro t2": {
+                        "gcode": "MMU_CHANGE_TOOL TOOL=2",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro t3": {
+                        "gcode": "MMU_CHANGE_TOOL TOOL=3",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro t4": {
+                        "gcode": "MMU_CHANGE_TOOL TOOL=4",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro t5": {
+                        "gcode": "MMU_CHANGE_TOOL TOOL=5",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro t6": {
+                        "gcode": "MMU_CHANGE_TOOL TOOL=6",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro t7": {
+                        "gcode": "MMU_CHANGE_TOOL TOOL=7",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro t8": {
+                        "gcode": "MMU_CHANGE_TOOL TOOL=8",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__eject": {
+                        "gcode": "MMU_EJECT",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__home": {
+                        "gcode": "\n{% set TOOL = params.TOOL|default(0)|int %}\n{% set FORCE_UNLOAD = params.FORCE_UNLOAD|default(0)|int %}\nMMU_HOME TOOL={TOOL} FORCE_UNLOAD={FORCE_UNLOAD}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__status": {
+                        "gcode": "MMU_STATUS",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__motors_off": {
+                        "gcode": "MMU_MOTORS_OFF",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__servo": {
+                        "gcode": "\n{% set POS = params.POS|default(\"up\")|string %}\nMMU_SERVO POS={POS}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__select_tool": {
+                        "gcode": "\n{% set TOOL = params.TOOL|default(0)|int %}\nMMU_SELECT TOOL={TOOL}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__select_bypass": {
+                        "gcode": "MMU_SELECT_BYPASS",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__load_bypass": {
+                        "gcode": "MMU_LOAD_BYPASS",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__recover": {
+                        "gcode": "MMU_RECOVER",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__preload": {
+                        "gcode": "\n{% set GATE = params.GATE|default(0)|int %}\nMMU_PRELOAD GATE={GATE}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu__check_gates": {
+                        "gcode": "\n{% set GATE = params.GATE|default(0)|int %}\nMMU_CHECK_GATES GATE={GATE}",
+                        "description": "G-Code macro"
+                    },
+                    "gcode_macro mmu_change_tool_standalone": {
+                        "gcode": "\n{% set TOOL = params.TOOL|default(0)|int %}\nMMU_CHANGE_TOOL TOOL={TOOL} STANDALONE=1",
+                        "description": "Convenience macro for inclusion in print_start for initial tool load (defined in mmu_software.cfg)"
+                    },
+                    "gcode_macro _mmu_form_tip_standalone": {
+                        "gcode": "\n\n{% set UNLOADING_SPEED_START = params.UNLOADING_SPEED_START|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['unloading_speed_start']) %}\n{% set UNLOADING_SPEED = params.UNLOADING_SPEED|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['unloading_speed']) %}\n{% set RAMMING_VOLUME = params.RAMMING_VOLUME|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['ramming_volume']) %}\n{% set SS_RAMMING = params.SS_RAMMING|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['ss_ramming']) %}\n{% set COOLING_TUBE_LENGTH = params.COOLING_TUBE_LENGTH|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['cooling_tube_length']) %}\n{% set COOLING_TUBE_POSITION = params.COOLING_TUBE_POSITION|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['cooling_tube_position']) %}\n{% set INITIAL_COOLING_SPEED = params.INITIAL_COOLING_SPEED|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['initial_cooling_speed']) %}\n{% set FINAL_COOLING_SPEED = params.FINAL_COOLING_SPEED|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['final_cooling_speed']) %}\n{% set COOLING_MOVES = params.COOLING_MOVES|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['cooling_moves']) %}\n{% set TOOLCHANGE_TEMP = params.TOOLCHANGE_TEMP|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['toolchange_temp']) %}\n{% set USE_SKINNYDIP = params.USE_SKINNYDIP|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['use_skinnydip']) %}\n{% set USE_FAST_SKINNYDIP = params.USE_FAST_SKINNYDIP|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['use_fast_skinnydip']) %}\n{% set SKINNYDIP_DISTANCE = params.SKINNYDIP_DISTANCE|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['skinnydip_distance']) %}\n{% set DIP_INSERTION_SPEED = params.DIP_INSERTION_SPEED|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['dip_insertion_speed']) %}\n{% set DIP_EXTRACTION_SPEED = params.DIP_EXTRACTION_SPEED|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['dip_extraction_speed']) %}\n{% set MELT_ZONE_PAUSE = params.MELT_ZONE_PAUSE|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['melt_zone_pause']) %}\n{% set COOLING_ZONE_PAUSE = params.COOLING_ZONE_PAUSE|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['cooling_zone_pause']) %}\n{% set PARKING_DISTANCE = params.PARKING_DISTANCE|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['parking_distance']) %}\n{% set FINAL_EJECT = params.FINAL_EJECT|default(printer['gcode_macro _MMU_FORM_TIP_STANDALONE']['final_eject']) %}\n\nG91\nG92 E0\n\n\n\n\n\nSET_PRESSURE_ADVANCE ADVANCE=0\n{% set OLD_TEMP = printer.extruder.target %}\n{% if SS_RAMMING|int == 0 and RAMMING_VOLUME|int > 0 %}\n{% set RATIO = (RAMMING_VOLUME|float) /23.0 %}\nG1 E{0.5784 * RATIO|float} F299\nG1 E{0.5834 * RATIO|float} F302\nG1 E{0.5918 * RATIO|float} F306\nG1 E{0.6169 * RATIO|float} F319\nG1 E{0.3393 * RATIO|float} F350\nG1 E{0.3363 * RATIO|float} F350\nG1 E{0.7577 * RATIO|float} F392\nG1 E{0.8382 * RATIO|float} F434\nG1 E{0.7776 * RATIO|float} F469\nG1 E{0.1293 * RATIO|float} F469\nG1 E{0.9673 * RATIO|float} F501\nG1 E{1.0176 * RATIO|float} F527\nG1 E{0.5956 * RATIO|float} F544\nG1 E{0.4555 * RATIO|float} F544\nG1 E{1.0662 * RATIO|float} F552\n{% endif %}\n\n\n\n\n{% if TOOLCHANGE_TEMP|float > 0 and USE_FAST_SKINNYDIP|int == 0 %}\nM109 S{TOOLCHANGE_TEMP}\n{% endif %}\n\n\n{% set TOTAL_RETRACTION_DISTANCE = COOLING_TUBE_POSITION|float + COOLING_TUBE_LENGTH|float / 2 - 15 %}\nG1 E-15 F{1.0 * UNLOADING_SPEED_START|float * 60}\nG1 E-{0.7 * TOTAL_RETRACTION_DISTANCE} F{1.0 * UNLOADING_SPEED|float * 60}\nG1 E-{0.2 * TOTAL_RETRACTION_DISTANCE} F{0.5 * UNLOADING_SPEED|float * 60}\nG1 E-{0.1 * TOTAL_RETRACTION_DISTANCE} F{0.3 * UNLOADING_SPEED|float * 60}\n\n{% if TOOLCHANGE_TEMP|float > 0 and USE_FAST_SKINNYDIP|int == 1 %}\nM104 S{TOOLCHANGE_TEMP}\n{% endif %}\n\n\n{% set SPEED_INC = (FINAL_COOLING_SPEED|float - INITIAL_COOLING_SPEED|float) / (2 * COOLING_MOVES|float - 1) %}\n{% for move in range(COOLING_MOVES|int) %}\nG1 E{COOLING_TUBE_LENGTH} F{(INITIAL_COOLING_SPEED|float + SPEED_INC*move*2) * 60}\nG1 E-{COOLING_TUBE_LENGTH} F{(INITIAL_COOLING_SPEED|float + SPEED_INC*(move*2+1)) * 60}\n{% endfor %}\n\n\n{% if TOOLCHANGE_TEMP|float > 0 and USE_FAST_SKINNYDIP|int == 1 %}\nM109 S{TOOLCHANGE_TEMP}\n{% endif %}\n\n\n{% if USE_SKINNYDIP|int == 1 %}\nG1 E{SKINNYDIP_DISTANCE} F{DIP_INSERTION_SPEED|float * 60}\nG4 P{MELT_ZONE_PAUSE}\nG1 E-{SKINNYDIP_DISTANCE} F{DIP_EXTRACTION_SPEED|float * 60}\nG4 P{COOLING_ZONE_PAUSE}\n{% endif %}\n\n{% if TOOLCHANGE_TEMP|float > 0 %}\nM104 S{OLD_TEMP}\n{% endif %}\n\n\n{% if FINAL_EJECT|int == 1 %}\nG92 E0\nG1 E-80 F3000\n\n\n{% elif PARKING_DISTANCE|int > 0 %}\nG90\nG1 E-{PARKING_DISTANCE} F3000\n\n{% endif %}\n\nG92 E0\nG90",
+                        "description": "Standalone macro that mimics SuperSlicer process",
+                        "variable_unloading_speed_start": "80",
+                        "variable_unloading_speed": "20",
+                        "variable_ramming_volume": "0",
+                        "variable_ss_ramming": "0",
+                        "variable_cooling_tube_position": "35",
+                        "variable_cooling_tube_length": "10",
+                        "variable_initial_cooling_speed": "10",
+                        "variable_final_cooling_speed": "50",
+                        "variable_toolchange_temp": "0",
+                        "variable_cooling_moves": "4",
+                        "variable_use_skinnydip": "1",
+                        "variable_skinnydip_distance": "30",
+                        "variable_dip_insertion_speed": "30",
+                        "variable_dip_extraction_speed": "70",
+                        "variable_melt_zone_pause": "0",
+                        "variable_cooling_zone_pause": "0",
+                        "variable_use_fast_skinnydip": "0",
+                        "variable_final_eject": "0",
+                        "variable_parking_distance": "0"
+                    },
+                    "gcode_macro _mmu_cut_tip": {
+                        "gcode": "\n\n{% set FINAL_EJECT = params.FINAL_EJECT|default(printer['gcode_macro _MMU_CUT_TIP']['final_eject']) %}\n\n\n\n\n\n\n{% if FINAL_EJECT|int == 1 %}\nG92 E0\nG1 E-80 F3000\n{% endif %}\n\nG92 E0\nG90",
+                        "description": "Standalone macro for filament tip cutting logic",
+                        "variable_final_eject": "0",
+                        "variable_output_park_pos": "25"
+                    },
+                    "gcode_macro _mmu_pre_unload": {
+                        "gcode": "",
+                        "description": "Optional pre unload routine for filament change"
+                    },
+                    "gcode_macro _mmu_post_load": {
+                        "gcode": "",
+                        "description": "Optional post load routine for filament change"
+                    },
+                    "gcode_macro _mmu_endless_spool_pre_unload": {
+                        "gcode": "\nPAUSE",
+                        "description": "Optional post unload routine for EndlessSpool changes"
+                    },
+                    "gcode_macro _mmu_endless_spool_post_load": {
+                        "gcode": "\nRESUME",
+                        "description": "Optional post load routine for EndlessSpool changes"
+                    },
+                    "gcode_macro _mmu_action_changed": {
+                        "gcode": "\n{% set ACTION = params.ACTION|string %}\n{% set OLD_ACTION = params.OLD_ACTION|string %}\n\n{% if ACTION|string == \"Loading\" %}\n\n\n{% endif %}\n\n{% if ACTION|string == \"Unloading\" %}\n\n\n{% endif %}\n\n{% if ACTION|string == \"Idle\" %}\n\n\n{% endif %}",
+                        "description": "Called when an action has changed"
+                    },
+                    "gcode_macro _mmu_load_sequence": {
+                        "gcode": "\n{% set filament_pos = params.FILAMENT_POS|float %}\n{% set length = params.LENGTH|float %}\n{% set full = params.FULL|int %}\n{% set home_extruder = params.HOME_EXTRUDER|int %}\n{% set skip_extruder = params.SKIP_EXTRUDER|int %}\n{% set extruder_only = params.EXTRUDER_ONLY|int %}\n\n{% if extruder_only %}\n_MMU_STEP_LOAD_TOOLHEAD EXTRUDER_ONLY=1\n\n{% elif filament_pos >= 5 %}\n{action_raise_error(\"Can't load - already in extruder!\")}\n\n{% else %}\n{% if filament_pos <= 0 %}\n_MMU_STEP_LOAD_ENCODER\n{% endif %}\n\n{% if filament_pos < 3 %}\n_MMU_STEP_LOAD_BOWDEN LENGTH={length}\n{% endif %}\n\n{% if filament_pos < 4 and home_extruder %}\n_MMU_STEP_HOME_EXTRUDER\n{% endif %}\n\n{% if not skip_extruder %}\n_MMU_STEP_LOAD_TOOLHEAD\n{% endif %}\n\n{% endif %}",
+                        "description": "Called when MMU is asked to load filament"
+                    },
+                    "gcode_macro _mmu_unload_sequence": {
+                        "gcode": "\n{% set filament_pos = params.FILAMENT_POS|float %}\n{% set length = params.LENGTH|float %}\n{% set extruder_only = params.EXTRUDER_ONLY|int %}\n{% set park_pos = params.PARK_POS|float %}\n\n{% if extruder_only %}\n{% if filament_pos >= 5 %}\n_MMU_STEP_UNLOAD_TOOLHEAD EXTRUDER_ONLY=1 PARK_POS={park_pos}\n{% else %}\n{action_raise_error(\"Can't unload extruder - already unloaded!\")}\n{% endif %}\n\n{% elif filament_pos == 0 %}\n{action_raise_error(\"Can't unload - already unloaded!\")}\n\n{% else %}\n{% if filament_pos >= 5 %}\n\n_MMU_STEP_UNLOAD_TOOLHEAD PARK_POS={park_pos}\n{% endif %}\n\n{% if filament_pos >= 3 %}\n\n_MMU_STEP_UNLOAD_BOWDEN FULL=1\n_MMU_STEP_UNLOAD_ENCODER\n\n{% elif filament_pos >= 1 %}\n\n_MMU_STEP_UNLOAD_ENCODER FULL=1\n{% endif %}\n\n{% endif %}",
+                        "description": "Called when MMU is asked to unload filament"
+                    },
+                    "printer": {
+                        "max_velocity": 450,
+                        "max_accel": 3500,
+                        "max_accel_to_decel": 1500,
+                        "square_corner_velocity": 5,
+                        "buffer_time_low": 1,
+                        "buffer_time_high": 2,
+                        "buffer_time_start": 0.25,
+                        "move_flush_time": 0.05,
+                        "kinematics": "corexy",
+                        "max_z_velocity": 30,
+                        "max_z_accel": 350
+                    },
+                    "extruder": {
+                        "sensor_type": "T-D500",
+                        "pullup_resistor": 4700,
+                        "inline_resistor": 0,
+                        "sensor_pin": "e_sensor_pin",
+                        "min_temp": 0,
+                        "max_temp": 285,
+                        "min_extrude_temp": 170,
+                        "max_power": 1,
+                        "smooth_time": 1,
+                        "control": "pid",
+                        "pid_kp": 30.377,
+                        "pid_ki": 2.154,
+                        "pid_kd": 107.078,
+                        "heater_pin": "e_heater_pin",
+                        "pwm_cycle_time": 0.1,
+                        "nozzle_diameter": 0.4,
+                        "filament_diameter": 1.75,
+                        "max_extrude_cross_section": 0.6400000000000001,
+                        "max_extrude_only_velocity": 60,
+                        "max_extrude_only_accel": 931.2837812920051,
+                        "max_extrude_only_distance": 200,
+                        "instantaneous_corner_velocity": 1
+                    },
+                    "verify_heater extruder": {
+                        "hysteresis": 5,
+                        "max_error": 120,
+                        "heating_gain": 2,
+                        "check_gain_time": 20
+                    }
+                },
+                "warnings": [],
+                "save_config_pending": false,
+                "save_config_pending_items": {}
+            }
+        }
+    }
+}
